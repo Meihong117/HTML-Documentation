@@ -27,7 +27,7 @@
           address
         </button>
         <button class="tablinks" onclick="elements(event, 'area')">
-          area
+          area / map
         </button>
         <button class="tablinks" onclick="elements(event, 'article')">
           article
@@ -65,18 +65,8 @@
         <button class="tablinks" onclick="elements(event, 'canvas')">
           canvas
         </button>
-        <button class="tablinks" onclick="elements(event, 'caption')">
-          caption
-        </button>
-
         <button class="tablinks" onclick="elements(event, 'code')">
           code
-        </button>
-        <button class="tablinks" onclick="elements(event, 'col')">
-          col
-        </button>
-        <button class="tablinks" onclick="elements(event, 'colgroup')">
-          colgroup
         </button>
         <button class="tablinks" onclick="elements(event, 'data')">
           data
@@ -85,13 +75,13 @@
           datalist
         </button>
         <button class="tablinks" onclick="elements(event, 'dd')">
-          dd
+          dd / dl / dt /
         </button>
         <button class="tablinks" onclick="elements(event, 'del')">
-          del
+          del / ins
         </button>
         <button class="tablinks" onclick="elements(event, 'details')">
-          details
+          details / summary
         </button>
         <button class="tablinks" onclick="elements(event, 'dfn')">
           dfn
@@ -102,12 +92,6 @@
         <button class="tablinks" onclick="elements(event, 'div')">
           div
         </button>
-        <button class="tablinks" onclick="elements(event, 'dl')">
-          dl
-        </button>
-        <button class="tablinks" onclick="elements(event, 'dt')">
-          dt
-        </button>
 
         <button class="tablinks" onclick="elements(event, 'em')">
           em
@@ -116,22 +100,17 @@
           embed
         </button>
         <button class="tablinks" onclick="elements(event, 'fieldset')">
-          fieldset
+          fieldset / form / legend
         </button>
         <button class="tablinks" onclick="elements(event, 'figcaption')">
-          figcaption
+          figcaption / figure
         </button>
-        <button class="tablinks" onclick="elements(event, 'figure')">
-          figure
-        </button>
+
         <button class="tablinks" onclick="elements(event, 'footer')">
           footer
         </button>
-        <button class="tablinks" onclick="elements(event, 'form')">
-          form
-        </button>
         <button class="tablinks" onclick="elements(event, 'h1')">
-          h1
+          h1~h6
         </button>
         <button class="tablinks" onclick="elements(event, 'head')">
           head
@@ -155,20 +134,13 @@
           img
         </button>
         <button class="tablinks" onclick="elements(event, 'input')">
-          input
+          input / label
         </button>
-        <button class="tablinks" onclick="elements(event, 'ins')">
-          ins
-        </button>
+
         <button class="tablinks" onclick="elements(event, 'kbd')">
           kbd
         </button>
-        <button class="tablinks" onclick="elements(event, 'label')">
-          label
-        </button>
-        <button class="tablinks" onclick="elements(event, 'legend')">
-          legend
-        </button>
+
         <button class="tablinks" onclick="elements(event, 'li')">
           li
         </button>
@@ -284,14 +256,11 @@
           sub
         </button>
 
-        <button class="tablinks" onclick="elements(event, 'summary')">
-          summary
-        </button>
         <button class="tablinks" onclick="elements(event, 'sup')">
           sup
         </button>
         <button class="tablinks" onclick="elements(event, 'table')">
-          table / tbody / thead / td / th / tr
+          table / tbody / thead / td / th / tr / caption / col
         </button>
         <button class="tablinks" onclick="elements(event, 'template')">
           template
@@ -363,7 +332,7 @@
         </div>
         <!--  -->
         <div id="area" class="tabcontent">
-          <h3>area</h3>
+          <h3>area / map</h3>
           <p>Click the picture left or right, got to the other website.</p>
           <div>
             <map name="primary">
@@ -549,15 +518,386 @@
           <h3>br</h3>
           <div></div>
         </div>
-        <!-- bdi -->
-        <div id="bdi" class="tabcontent">
-          <h3>bdi</h3>
+        <!-- button -->
+        <div id="button" class="tabcontent">
+          <h3>button</h3>
           <div></div>
         </div>
-        <!-- bdi -->
-        <div id="bdi" class="tabcontent">
-          <h3>bdi</h3>
+        <!-- canvas -->
+        <div id="canvas" class="tabcontent">
+          <h3>canvas</h3>
+          <p>
+            Use the < canvas > with either the canvas scripting API or the WebGL
+            API to draw graphics and animations.
+          </p>
+          <div>
+            <canvas width="300" height="300">
+              An alternative text describing what your canvas displays.
+            </canvas>
+          </div>
+        </div>
+        <!-- code -->
+        <div id="code" class="tabcontent">
+          <h3>code</h3>
           <div></div>
+        </div>
+        <!-- data -->
+        <div id="data" class="tabcontent">
+          <h3>data</h3>
+          <p>
+            The < data > links a given piece of content with a machine-readable
+            translation. If the content is time- or date-related, the < time >
+            element must be used.
+          </p>
+          <div>
+            <p>Hover text below:</p>
+            <ul>
+              <li><data value="398">Mini Ketchup</data></li>
+              <li><data value="399">Jumbo Ketchup</data></li>
+              <li><data value="400">Mega Jumbo Ketchup</data></li>
+            </ul>
+          </div>
+        </div>
+        <!-- datalist -->
+        <div id="datalist" class="tabcontent">
+          <h3>datalist</h3>
+          <div>
+            <label for="ice-cream-choice">Choose a flavor:</label>
+            <input
+              list="ice-cream-flavors"
+              id="ice-cream-choice"
+              name="ice-cream-choice"
+            />
+            <datalist id="ice-cream-flavors">
+              <option value="Chocolate"> </option>
+              <option value="Coconut"> </option>
+              <option value="Mint"> </option>
+              <option value="Strawberry"> </option>
+              <option value="Vanilla"> </option>
+            </datalist>
+            <p>option: Chocolate / Coconut / Mint / Strawberry / Vanilla</p>
+          </div>
+        </div>
+        <!-- dd -->
+        <div id="dd" class="tabcontent">
+          <h3>dd</h3>
+          <div>
+            <p>Cryptids of Cornwall:</p>
+
+            <dl>
+              <dt>Beast of Bodmin</dt>
+              <dd>A large feline inhabiting Bodmin Moor.</dd>
+
+              <dt>Morgawr</dt>
+              <dd>A sea serpent.</dd>
+
+              <dt>Owlman</dt>
+              <dd>A giant owl-like creature.</dd>
+            </dl>
+          </div>
+        </div>
+        <!-- del -->
+        <div id="del" class="tabcontent">
+          <h3>del</h3>
+          <div>
+            <p>There is <del>del</del> and there is <ins>ins</ins></p>
+          </div>
+        </div>
+        <!-- details -->
+        <div id="details" class="tabcontent">
+          <h3>details</h3>
+          <div>
+            <details>
+              <summary>Details</summary>
+              Something small enough to escape casual notice.
+            </details>
+          </div>
+        </div>
+        <!-- dfn -->
+        <div id="dfn" class="tabcontent">
+          <h3>dfn</h3>
+          <div>
+            <p>
+              A <dfn id="def-validator">validator</dfn> is a program that checks
+              for syntax errors in code or documents.
+            </p>
+          </div>
+        </div>
+        <!-- div -->
+        <div id="div" class="tabcontent">
+          <h3>div</h3>
+          <div></div>
+        </div>
+        <!-- dialog -->
+        <div id="dialog" class="tabcontent">
+          <h3>dialog</h3>
+          <div>
+            <!-- Simple pop-up dialog box containing a form -->
+            <dialog id="favDialog">
+              <form method="dialog">
+                <p>
+                  <label
+                    >Favorite animal:
+                    <select>
+                      <option></option>
+                      <option>Brine shrimp</option>
+                      <option>Red panda</option>
+                      <option>Spider monkey</option>
+                    </select>
+                  </label>
+                </p>
+                <menu>
+                  <button value="cancel">Cancel</button>
+                  <button id="confirmBtn" value="default">Confirm</button>
+                </menu>
+              </form>
+            </dialog>
+
+            <menu>
+              <button id="updateDetails">Update details</button>
+            </menu>
+
+            <output aria-live="polite"></output>
+          </div>
+        </div>
+        <!-- em -->
+        <div id="em" class="tabcontent">
+          <h3>em</h3>
+          <div>
+            <p>Get out of bed <em>now</em>!</p>
+            <p>We <em>had</em> to do something about it.</p>
+            <p>This is <em>not</em> a drill!</p>
+          </div>
+        </div>
+        <!-- embed -->
+        <div id="embed" class="tabcontent">
+          <h3>embed</h3>
+          <p>embeds external content at the specified point in the document.</p>
+          <div>
+            <embed
+              type="video/quicktime"
+              src="img/demo.mp4"
+              width="640"
+              height="480"
+              title="Title of my video"
+            />
+          </div>
+        </div>
+        <!-- fieldset -->
+        <div id="fieldset" class="tabcontent">
+          <h3>fieldset / form</h3>
+          <div>
+            <form action="#">
+              <fieldset disabled>
+                <legend>legend</legend>
+                <div>
+                  <label for="name">Name: </label>
+                  <input type="text" id="name" value="Chris" />
+                </div>
+                <div>
+                  <label for="pwd">Archetype: </label>
+                  <input type="password" id="pwd" value="Wookie" />
+                </div>
+                <input type="radio" id="kraken" name="monster" />
+                <label for="kraken">Kraken</label><br />
+
+                <input type="radio" id="sasquatch" name="monster" />
+                <label for="sasquatch">Sasquatch</label><br />
+
+                <input type="radio" id="mothman" name="monster" />
+                <label for="mothman">Mothman</label>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+        <!-- figcaption -->
+        <div id="figcaption" class="tabcontent">
+          <h3>figcaption / figure</h3>
+          <div class="figcaption">
+            <figure>
+              <img src="img/ballon.jpg" alt="picture of ballon" />
+              <figcaption>ballon</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <!-- footer -->
+        <div id="footer" class="tabcontent">
+          <h3>footer</h3>
+          <div></div>
+        </div>
+
+        <!-- h1 -->
+        <div id="h1" class="tabcontent">
+          <h3>h1</h3>
+          <div></div>
+        </div>
+
+        <!-- hr -->
+        <div id="hr" class="tabcontent">
+          <h3>hr</h3>
+          <div>
+            <p>
+              §1: The first rule of Fight Club is: You do not talk about Fight
+              Club.
+            </p>
+            <hr />
+            <p>§2: The second rule of Fight Club is: Always bring cupcakes.</p>
+          </div>
+        </div>
+        <!-- i -->
+        <div id="i" class="tabcontent">
+          <h3>i</h3>
+          <div>
+            <p>I looked at it and thought <i>This can't be real!</i></p>
+          </div>
+        </div>
+        <!-- iframe -->
+        <div id="iframe" class="tabcontent">
+          <h3>iframe</h3>
+          <div></div>
+        </div>
+        <!-- img -->
+        <div id="img" class="tabcontent">
+          <h3>img</h3>
+          <div></div>
+        </div>
+        <!-- input -->
+        <div id="input" class="tabcontent">
+          <h3>input types=" "</h3>
+          <ol>
+            <li>button</li>
+            <li>checkbox</li>
+            <li>color</li>
+            <li>date</li>
+            <li>datetime-local</li>
+            <li>email</li>
+            <li>file</li>
+            <li>hidden</li>
+            <li>image</li>
+            <li>month</li>
+            <li>number</li>
+            <li>password</li>
+            <li>radio</li>
+            <li>range</li>
+            <li>reset</li>
+            <li>search</li>
+            <li>submit</li>
+            <li>tel</li>
+            <li>text</li>
+            <li>time</li>
+            <li>url</li>
+            <li>week</li>
+          </ol>
+          <div>
+            <label for="cheese">Do you like cheese?</label>
+            <input type="checkbox" name="cheese" id="cheese" />
+          </div>
+        </div>
+        <!-- kbd -->
+        <div id="kbd" class="tabcontent">
+          <h3>kbd</h3>
+          <div>
+            <p>
+              Please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> to
+              re-render an MDN page.
+            </p>
+          </div>
+        </div>
+        <!-- main -->
+        <div id="main" class="tabcontent">
+          <h3>main</h3>
+          <div>
+            <header>Gecko facts</header>
+            <main>
+              <p>
+                Geckos are a group of usually small, usually nocturnal lizards.
+                They are found on every continent except Australia.
+              </p>
+              <p>
+                Many species of gecko have adhesive toe pads which enable them
+                to climb walls and even windows.
+              </p>
+            </main>
+          </div>
+        </div>
+
+        <!-- mark -->
+        <div id="mark" class="tabcontent">
+          <h3>mark</h3>
+          <div>
+            <p>This is <mark>mark</mark>.</p>
+          </div>
+        </div>
+        <!-- meta -->
+        <div id="meta" class="tabcontent">
+          <h3>meta</h3>
+          <div>
+            <code
+              >< meta charset="utf-8"> <br />
+              Redirect page after 3 seconds
+              <br />
+              < meta http-equiv="refresh"
+              content="3;url=https://www.mozilla.org">
+            </code>
+          </div>
+        </div>
+        <!-- metaName -->
+        <div id="metaName" class="tabcontent">
+          <h3>metaName</h3>
+          <div>
+            <code>< meta name="color-scheme" content="dark light" ></code>
+          </div>
+        </div>
+        <!-- metaColor -->
+        <div id="metaColor" class="tabcontent">
+          <h3>metaColor</h3>
+          <div>
+            <p>< meta name="theme-color" content="#4285f4" /></p>
+            <img src="img/theme.png" alt="" / style="height: 200px; width:
+            300px;">
+          </div>
+        </div>
+        <!-- canvas -->
+        <div id="canvas" class="tabcontent">
+          <h3>canvas</h3>
+          <div></div>
+        </div>
+        <!-- canvas -->
+        <div id="canvas" class="tabcontent">
+          <h3>canvas</h3>
+          <div></div>
+        </div>
+
+        <!-- table -->
+        <div id="table" class="tabcontent">
+          <h3>table</h3>
+          <div>
+            <table>
+              <colgroup>
+                <col />
+                <col span="2" style="background-color: #d7d9f2;" />
+                <col span="2" style=" background-color: #ffe8d4;" />
+              </colgroup>
+              <caption>
+                This is caption
+              </caption>
+              <tr>
+                <td></td>
+                <th scope="col">head #1</th>
+                <th scope="col">head #2</th>
+                <th scope="col">head #3</th>
+                <th scope="col">head #4</th>
+              </tr>
+              <tr>
+                <td scope="row">skill</td>
+                <td>first</td>
+                <td>second</td>
+                <td>thrid</td>
+                <td>fourth</td>
+              </tr>
+            </table>
+          </div>
         </div>
       </div>
     </div>
@@ -579,6 +919,39 @@
 
       // Get the element with id="defaultOpen" and click on it
       document.getElementById("defaultOpen").click();
+    </script>
+    <!-- canvas -->
+    <script>
+      const canvas = document.querySelector("canvas");
+      const ctx = canvas.getContext("2d");
+      ctx.fillStyle = "green";
+      ctx.fillRect(10, 10, 100, 100);
+    </script>
+    <!-- script -->
+    <script>
+      let updateButton = document.getElementById("updateDetails");
+      let favDialog = document.getElementById("favDialog");
+      let outputBox = document.querySelector("output");
+      let selectEl = document.querySelector("select");
+      let confirmBtn = document.getElementById("confirmBtn");
+
+      // "Update details" button opens the <dialog> modally
+      updateButton.addEventListener("click", function onOpen() {
+        if (typeof favDialog.showModal === "function") {
+          favDialog.showModal();
+        } else {
+          alert("The <dialog> API is not supported by this browser");
+        }
+      });
+      // "Favorite animal" input sets the value of the submit button
+      selectEl.addEventListener("change", function onSelect(e) {
+        confirmBtn.value = selectEl.value;
+      });
+      // "Confirm" button of form triggers "close" on dialog because of [method="dialog"]
+      favDialog.addEventListener("close", function onClose() {
+        outputBox.value =
+          favDialog.returnValue + " button clicked - " + new Date().toString();
+      });
     </script>
   </body>
 </html>
