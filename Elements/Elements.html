@@ -9,7 +9,9 @@
   </head>
   <body>
     <!--  -->
-    <div class="h1"><h1>Elements</h1></div>
+    <div class="h1">
+      <h1><a href="https://devdocs.io/html-elements/">Elements >></a></h1>
+    </div>
     <div class="container">
       <!------------------------------------------------- button -->
       <div class="tab">
@@ -210,14 +212,9 @@
         <button class="tablinks" onclick="elements(event, 'q')">
           q
         </button>
-        <button class="tablinks" onclick="elements(event, 'rp')">
-          rp
-        </button>
-        <button class="tablinks" onclick="elements(event, 'rt')">
-          rt
-        </button>
+
         <button class="tablinks" onclick="elements(event, 'ruby')">
-          ruby
+          ruby / rp / rt
         </button>
         <button class="tablinks" onclick="elements(event, 's')">
           s
@@ -228,11 +225,9 @@
         <button class="tablinks" onclick="elements(event, 'script')">
           script
         </button>
-        <button class="tablinks" onclick="elements(event, 'section')">
-          section
-        </button>
+
         <button class="tablinks" onclick="elements(event, 'select')">
-          select
+          select / option
         </button>
         <button class="tablinks" onclick="elements(event, 'slot')">
           slot
@@ -240,9 +235,7 @@
         <button class="tablinks" onclick="elements(event, 'small')">
           small
         </button>
-        <button class="tablinks" onclick="elements(event, 'source')">
-          source
-        </button>
+
         <button class="tablinks" onclick="elements(event, 'span')">
           span
         </button>
@@ -260,26 +253,21 @@
           sup
         </button>
         <button class="tablinks" onclick="elements(event, 'table')">
-          table / tbody / thead / td / th / tr / caption / col
-        </button>
-        <button class="tablinks" onclick="elements(event, 'template')">
+          table / tbody / thead / tfoot / td / th / tr / caption / col /
           template
         </button>
+
         <button class="tablinks" onclick="elements(event, 'textarea')">
           textarea
         </button>
-        <button class="tablinks" onclick="elements(event, 'tfoot')">
-          tfoot
-        </button>
+
         <button class="tablinks" onclick="elements(event, 'time')">
           time
         </button>
         <button class="tablinks" onclick="elements(event, 'title')">
           title
         </button>
-        <button class="tablinks" onclick="elements(event, 'track')">
-          track
-        </button>
+
         <button class="tablinks" onclick="elements(event, 'u')">
           u
         </button>
@@ -287,7 +275,7 @@
           var
         </button>
         <button class="tablinks" onclick="elements(event, 'video')">
-          video
+          video / source / track
         </button>
         <button class="tablinks" onclick="elements(event, 'wbr')">
           wbr
@@ -354,7 +342,7 @@
         </div>
         <!-- article -->
         <div id="article" class="tabcontent">
-          <h3>article</h3>
+          <h3>article / section</h3>
           <div>
             <article class="film_review">
               <h2>Jurassic Park</h2>
@@ -676,7 +664,7 @@
           <div>
             <embed
               type="video/quicktime"
-              src="img/demo.mp4"
+              src=""
               width="640"
               height="480"
               title="Title of my video"
@@ -854,19 +842,318 @@
           <h3>metaColor</h3>
           <div>
             <p>< meta name="theme-color" content="#4285f4" /></p>
-            <img src="img/theme.png" alt="" / style="height: 200px; width:
-            300px;">
+            <img
+              src="img/theme.png"
+              alt=""
+              style="height: 200px; width:
+            300px;"
+            />
           </div>
         </div>
-        <!-- canvas -->
-        <div id="canvas" class="tabcontent">
-          <h3>canvas</h3>
+        <!-- meter -->
+        <div id="meter" class="tabcontent">
+          <h3>meter</h3>
+          <div>
+            <label for="fuel">Fuel level:</label>
+            <meter
+              id="fuel"
+              min="0"
+              max="100"
+              low="33"
+              high="66"
+              optimum="80"
+              value="50"
+            >
+              at 50/100
+            </meter>
+          </div>
+        </div>
+        <!-- nav -->
+        <div id="nav" class="tabcontent">
+          <h3>nav</h3>
           <div></div>
         </div>
-        <!-- canvas -->
-        <div id="canvas" class="tabcontent">
-          <h3>canvas</h3>
+        <!-- noscript -->
+        <div id="noscript" class="tabcontent">
+          <h3>noscript</h3>
+          <div>
+            <noscript>
+              <!-- anchor linking to external file -->
+              <a href="https://www.mozilla.com/">External Link</a>
+            </noscript>
+            <p>Rocks!</p>
+          </div>
+        </div>
+
+        <!-- object -->
+        <div id="object" class="tabcontent">
+          <h3>object</h3>
+          <p>
+            The < object > represents an external resource, which can be treated
+            as an image, a nested browsing context, or a resource to be handled
+            by a plugin.
+          </p>
+          <p>see code</p>
+          <div>
+            <object
+              type="application/pdf"
+              data="/media/examples/In-CC0.pdf"
+              width="250"
+              height="200"
+            >
+            </object>
+          </div>
+        </div>
+        <!-- ol -->
+        <div id="ol" class="tabcontent">
+          <h3>ol</h3>
           <div></div>
+        </div>
+        <!-- optgroup -->
+        <div id="optgroup" class="tabcontent">
+          <h3>optgroup</h3>
+          <div>
+            <label for="dino-select">Choose a dinosaur:</label>
+            <select id="dino-select">
+              <optgroup label="Theropods">
+                <option>Tyrannosaurus</option>
+                <option>Velociraptor</option>
+                <option>Deinonychus</option>
+              </optgroup>
+              <optgroup label="Sauropods">
+                <option>Diplodocus</option>
+                <option>Saltasaurus</option>
+                <option>Apatosaurus</option>
+              </optgroup>
+            </select>
+          </div>
+        </div>
+        <!-- option -->
+        <div id="option" class="tabcontent">
+          <h3>option</h3>
+          <div></div>
+        </div>
+        <!-- output -->
+        <div id="output" class="tabcontent">
+          <h3>output</h3>
+          <div>
+            <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+              <input type="range" id="b" name="b" value="50" /> +
+              <input type="number" id="a" name="a" value="10" /> =
+              <output name="result" for="a b">60</output>
+            </form>
+          </div>
+        </div>
+        <!-- p -->
+        <div id="p" class="tabcontent">
+          <h3>p</h3>
+          <div></div>
+        </div>
+        <!-- param -->
+        <div id="param" class="tabcontent">
+          <h3>param</h3>
+          <div>
+            <p>The < param > defines parameters for an < object > element.</p>
+          </div>
+        </div>
+
+        <!-- picture -->
+        <div id="picture" class="tabcontent">
+          <h3>picture</h3>
+          <p>Change the browser window width to see the image change.</p>
+          <div>
+            <picture>
+              <source
+                srcset="/media/cc0-images/surfer-240-200.jpg"
+                media="(min-width: 800px)"
+              />
+              <img src="img/ballon.jpg" alt="ballon" />
+            </picture>
+          </div>
+        </div>
+        <!-- portal -->
+        <div id="portal" class="tabcontent">
+          <h3>portal</h3>
+          <div>
+            <portal
+              id="exampleportal"
+              src="https://devdocs.io/html/element/portal"
+            ></portal>
+          </div>
+        </div>
+        <!-- pre -->
+        <div id="pre" class="tabcontent">
+          <h3>pre</h3>
+          <div>
+            <pre>
+            L          TE
+              A       A
+                C    V
+                 R A
+                 DOU
+                 LOU
+                REUSE
+                QUE TU
+                PORTES
+              ET QUI T'
+              ORNE O CI
+               VILISÉ
+              OTE-  TU VEUX
+               LA    BIEN
+              SI      RESPI
+                      RER       - Apollinaire
+          </pre
+            >
+          </div>
+        </div>
+        <!-- progress -->
+        <div id="progress" class="tabcontent">
+          <h3>progress</h3>
+          <div>
+            <label for="file">File progress:</label>
+            <progress id="file" max="100" value="70"> 70% </progress>
+          </div>
+        </div>
+        <!-- q -->
+        <div id="q" class="tabcontent">
+          <h3>q</h3>
+          <div>
+            <p>
+              When Dave asks HAL to open the pod bay door, HAL answers:
+              <q cite="https://devdocs.io/html/element/q"
+                >I'm sorry, Dave. I'm afraid I can't do that.</q
+              >
+            </p>
+          </div>
+        </div>
+        <!-- ruby -->
+        <div id="ruby" class="tabcontent">
+          <h3>ruby</h3>
+          <div>
+            <ruby> 明日 <rp>(</rp><rt>Ashita</rt><rp>)</rp> </ruby>
+          </div>
+        </div>
+        <!-- s -->
+        <div id="s" class="tabcontent">
+          <h3>s</h3>
+          <div>
+            <p>
+              <s
+                >There will be a few tickets available at the box office
+                tonight.</s
+              >
+            </p>
+            <p>SOLD OUT!</p>
+          </div>
+        </div>
+        <!-- samp -->
+        <div id="samp" class="tabcontent">
+          <h3>samp</h3>
+          <div>
+            <p>
+              I was trying to boot my computer, but I got this hilarious
+              message:
+            </p>
+            <p>
+              <samp>Keyboard not found <br />Press F1 to continue</samp>
+            </p>
+          </div>
+        </div>
+        <!-- script -->
+        <div id="script" class="tabcontent">
+          <h3>script</h3>
+          <div></div>
+        </div>
+        <!-- select -->
+        <div id="select" class="tabcontent">
+          <h3>select / option</h3>
+          <div>
+            <label for="pet-select">Choose a pet:</label>
+            <select name="pets" id="pet-select">
+              <option value="">--Please choose an option--</option>
+              <option value="dog">Dog</option>
+              <option value="cat">Cat</option>
+              <option value="hamster">Hamster</option>
+              <option value="parrot">Parrot</option>
+              <option value="spider">Spider</option>
+              <option value="goldfish">Goldfish</option>
+            </select>
+          </div>
+        </div>
+        <!-- slot -->
+        <div id="slot" class="tabcontent">
+          <h3>slot</h3>
+          <div>
+            <code class="name"
+              >&lt;<slot name="element-name">NEED NAME</slot>&gt;</code
+            >
+            <i class="desc"><slot name="description">NEED DESCRIPTION</slot></i>
+          </div>
+        </div>
+        <!-- small -->
+        <div id="small" class="tabcontent">
+          <h3>small</h3>
+          <div>
+            <p>
+              MDN Web Docs is a learning platform for Web technologies and the
+              software that powers the Web.
+            </p>
+            <hr />
+            <p>
+              <small
+                >The content is licensed under a Creative Commons
+                Attribution-ShareAlike 2.5 Generic License.</small
+              >
+            </p>
+          </div>
+        </div>
+
+        <!-- span -->
+        <div id="span" class="tabcontent">
+          <h3>span</h3>
+          <div></div>
+        </div>
+        <!-- strong -->
+        <div id="strong" class="tabcontent">
+          <h3>strong</h3>
+          <div>
+            <p>
+              ... the most important rule, the rule you can never forget, no
+              matter how much he cries, no matter how much he begs:
+              <strong>never feed him after midnight</strong>.
+            </p>
+          </div>
+        </div>
+        <!-- style -->
+        <div id="style" class="tabcontent">
+          <h3>style</h3>
+          <div></div>
+        </div>
+        <!-- sub -->
+        <div id="sub" class="tabcontent">
+          <h3>sub</h3>
+          <div>
+            <p>
+              Almost every developer's favorite molecule is
+              C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>, also known
+              as "caffeine."
+            </p>
+          </div>
+        </div>
+        <!-- sup -->
+        <div id="sup" class="tabcontent">
+          <h3>sup</h3>
+          <div>
+            <p>
+              The <b>Pythagorean theorem</b> is often expressed as the following
+              equation:
+            </p>
+
+            <p>
+              <var>a<sup>2</sup></var> + <var>b<sup>2</sup></var> =
+              <var>c<sup>2</sup></var>
+            </p>
+          </div>
         </div>
 
         <!-- table -->
@@ -882,21 +1169,113 @@
               <caption>
                 This is caption
               </caption>
-              <tr>
-                <td></td>
-                <th scope="col">head #1</th>
-                <th scope="col">head #2</th>
-                <th scope="col">head #3</th>
-                <th scope="col">head #4</th>
-              </tr>
-              <tr>
-                <td scope="row">skill</td>
-                <td>first</td>
-                <td>second</td>
-                <td>thrid</td>
-                <td>fourth</td>
-              </tr>
+              <thead>
+                <tr>
+                  <td></td>
+                  <th scope="col">head #1</th>
+                  <th scope="col">head #2</th>
+                  <th scope="col">head #3</th>
+                  <th scope="col">head #4</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td scope="row">skill</td>
+                  <td>first</td>
+                  <td>second</td>
+                  <td>thrid</td>
+                  <td>fourth</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th scope="row">Totals</th>
+                  <td>21,000</td>
+                </tr>
+              </tfoot>
+              <template id="productrow">
+                <tr>
+                  <td class="record"></td>
+                  <td></td>
+                </tr>
+              </template>
             </table>
+          </div>
+        </div>
+        <!-- textarea -->
+        <div id="textarea" class="tabcontent">
+          <h3>textarea</h3>
+          <div></div>
+        </div>
+        <!-- time -->
+        <div id="time" class="tabcontent">
+          <h3>time</h3>
+          <div>
+            <p>
+              The Cure will be celebrating their 40th anniversary on
+              <time datetime="2018-07-07">July 7</time> in London's Hyde Park.
+            </p>
+            <p>
+              The concert starts at <time datetime="20:00">20:00</time> and
+              you'll be able to enjoy the band for at least
+              <time datetime="PT2H30M">2h 30m</time>.
+            </p>
+          </div>
+        </div>
+        <!-- title -->
+        <div id="title" class="tabcontent">
+          <h3>title</h3>
+          <div><title>Awesome interesting stuff</title></div>
+        </div>
+        <!-- u -->
+        <div id="u" class="tabcontent">
+          <h3>u</h3>
+          <div>
+            <p>
+              You could use this element to highlight <u>speling</u> mistakes,
+              so the writer can <u>corect</u> them.
+            </p>
+          </div>
+        </div>
+        <!-- var -->
+        <div id="var" class="tabcontent">
+          <h3>var</h3>
+          <div>
+            <p>
+              The volume of a box is <var>l</var> × <var>w</var> × <var>h</var>,
+              where <var>l</var> represents the length, <var>w</var> the width
+              and <var>h</var> the height of the box.
+            </p>
+          </div>
+        </div>
+        <!-- video -->
+        <div id="video" class="tabcontent">
+          <h3>video / source / track</h3>
+          <div>
+            <video controls width="250" height="200" muted>
+              <source src="/media/cc0-videos/flower.webm" type="video/webm" />
+              <source src="/media/cc0-videos/flower.mp4" type="video/mp4" />
+              <track
+                default
+                kind="captions"
+                srclang="en"
+                src="/media/examples/friday.vtt"
+              />
+              This browser does not support the HTML5 video element.
+            </video>
+          </div>
+        </div>
+        <!-- wbr -->
+        <div id="wbr" class="tabcontent">
+          <h3>wbr</h3>
+          <div>
+            <div id="example-paragraphs">
+              <p>Fernstraßenbauprivatfinanzierungsgesetz</p>
+              <p>
+                Fernstraßen<wbr />bau<wbr />privat<wbr />finanzierungs<wbr />gesetz
+              </p>
+              <p>Fernstraßen&shy;bau&shy;privat&shy;finanzierungs&shy;gesetz</p>
+            </div>
           </div>
         </div>
       </div>
