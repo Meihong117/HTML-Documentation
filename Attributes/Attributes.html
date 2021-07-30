@@ -12,7 +12,7 @@
     <div class="h1">
       <h1>
         <a href="https://devdocs.io/html/attributes#accept-attribute"
-          >Attributes</a
+          >Attributes >></a
         >
       </h1>
     </div>
@@ -140,7 +140,7 @@
           <td>< meta >, script</td>
           <td>Declares the character encoding of the page or script.</td>
         </tr>
-        <tr>
+        <tr style="color: red;">
           <td>checked</td>
           <td>< command >, < input ></td>
           <td>Indicates whether the element should be checked on page load.</td>
@@ -274,19 +274,622 @@
         </tr>
 
         <tr>
-          <td></td>
-          <td></td>
+          <td>defer</td>
+          <td>script</td>
+          <td>
+            Indicates that the script should be executed after the page has been
+            parsed.
+          </td>
+        </tr>
+        <tr style="color: red;">
+          <td>dir</td>
+          <td>Global attribute</td>
+          <td>
+            Defines the text direction. Allowed values are ltr (Left-To-Right)
+            or rtl (Right-To-Left)
+          </td>
+        </tr>
+        <tr>
+          <td>dirname</td>
+          <td>< input >, < textarea ></td>
           <td></td>
         </tr>
         <tr>
-          <td></td>
-          <td></td>
+          <td>disabled</td>
+          <td>
+            < button >, < command >, < fieldset >, < input >, < keygen >, <
+            optgroup >, < option >, < select >, < textarea >
+          </td>
+          <td>Indicates whether the user can interact with the element.</td>
+        </tr>
+        <tr>
+          <td>download</td>
+          <td>< a >, < area ></td>
+          <td>
+            Indicates that the hyperlink is to be used for downloading a
+            resource.
+          </td>
+        </tr>
+        <tr>
+          <td>draggable</td>
+          <td>Global attribute</td>
+          <td>Defines whether the element can be dragged.</td>
+        </tr>
+        <tr>
+          <td>enctype</td>
+          <td>< form ></td>
+          <td>
+            Defines the content type of the form data when the method is POST.
+          </td>
+        </tr>
+        <tr>
+          <td>enterkeyhint</td>
+          <td>< textarea >, contenteditable</td>
+          <td>
+            The enterkeyhint specifies what action label (or icon) to present
+            for the enter key on virtual keyboards. The attribute can be used
+            with form controls (such as the value of textarea elements), or in
+            elements in an editing host (e.g., using contenteditable attribute).
+          </td>
+        </tr>
+        <tr style="color: red;">
+          <td>for</td>
+          <td>< label >, < output ></td>
+          <td>Describes elements which belongs to this one.</td>
+        </tr>
+        <tr>
+          <td>form</td>
+          <td>
+            < button >, < fieldset >, < input >, < keygen >, < label >, < meter
+            >, < object >, < output >, < progress >, < select >, < textarea >
+          </td>
+          <td>Indicates the form that is the owner of the element.</td>
+        </tr>
+
+        <tr>
+          <td>formaction</td>
+          <td>< input >, < button ></td>
+          <td>
+            Indicates the action of the element, overriding the action defined
+            in the < form >.
+          </td>
+        </tr>
+        <tr>
+          <td>formenctype</td>
+          <td>< button >, < input ></td>
+          <td>
+            If the button/input is a submit button (type="submit"), this
+            attribute sets the encoding type to use during form submission. If
+            this attribute is specified, it overrides the enctype attribute of
+            the button's form owner.
+          </td>
+        </tr>
+        <tr>
+          <td>formmethod</td>
+          <td>< button >, < input ></td>
+          <td>
+            If the button/input is a submit button (type="submit"), this
+            attribute sets the submission method to use during form submission
+            (GET, POST, etc.). If this attribute is specified, it overrides the
+            method attribute of the button's form owner.
+          </td>
+        </tr>
+        <tr>
+          <td>formnovalidate</td>
+          <td>< button >, < input ></td>
+          <td>
+            If the button/input is a submit button (type="submit"), this boolean
+            attribute specifies that the form is not to be validated when it is
+            submitted. If this attribute is specified, it overrides the
+            novalidate attribute of the button's form owner.
+          </td>
+        </tr>
+        <tr>
+          <td>formtarget</td>
+          <td>< button >, < input ></td>
+          <td>
+            If the button/input is a submit button (type="submit"), this
+            attribute specifies the browsing context (for example, tab, window,
+            or inline frame) in which to display the response that is received
+            after submitting the form. If this attribute is specified, it
+            overrides the target attribute of the button's form owner.
+          </td>
+        </tr>
+        <tr>
+          <td>headers</td>
+          <td>< td >, < th ></td>
+          <td>IDs of the < th > elements which applies to this element.</td>
+        </tr>
+        <tr>
+          <td>height</td>
+          <td>
+            < canvas >, < embed >, < iframe >, < img >, < input >, < object >, <
+            video >
+          </td>
+          <td>
+            Specifies the height of elements listed here. For all other
+            elements, use the CSS height property.
+          </td>
+        </tr>
+        <tr>
+          <td>hidden</td>
+          <td>Global attribute</td>
+          <td>
+            Prevents rendering of given element, while keeping child elements,
+            e.g. script elements, active.
+          </td>
+        </tr>
+        <tr>
+          <td>high</td>
+          <td>< meter ></td>
+          <td>Indicates the lower bound of the upper range.</td>
+        </tr>
+        <tr style="color: red;">
+          <td>href</td>
+          <td>< a >, < area >, < base >, < link ></td>
+          <td>The URL of a linked resource.</td>
+        </tr>
+        <tr>
+          <td>hreflang</td>
+          <td>< a >, < area >, < link ></td>
+          <td>Specifies the language of the linked resource.</td>
+        </tr>
+        <tr>
+          <td>http-equiv</td>
+          <td>< meta ></td>
+          <td>Defines a pragma directive.</td>
+        </tr>
+        <tr>
+          <td>icon</td>
+          <td>< command ></td>
+          <td>Specifies a picture which represents the command.</td>
+        </tr>
+        <tr style="color: red;">
+          <td>id</td>
+          <td>Global attribute</td>
+          <td>
+            Often used with CSS to style a specific element. The value of this
+            attribute must be unique.
+          </td>
+        </tr>
+        <tr>
+          <td>importance</td>
+          <td>< iframe >, < img >, < link >, script</td>
+          <td>Indicates the relative fetch priority for the resource.</td>
+        </tr>
+        <tr>
+          <td>integrity</td>
+          <td>< link >, script</td>
+          <td>
+            Specifies a Subresource Integrity value that allows browsers to
+            verify what they fetch.
+          </td>
+        </tr>
+        <tr>
+          <td>intrinsicsize</td>
+          <td>< img ></td>
+          <td>
+            This attribute tells the browser to ignore the actual intrinsic size
+            of the image and pretend it’s the size specified in the attribute.
+          </td>
+        </tr>
+        <tr>
+          <td>inputmode</td>
+          <td>< textarea >, contenteditable</td>
+          <td>
+            Provides a hint as to the type of data that might be entered by the
+            user while editing the element or its contents. The attribute can be
+            used with form controls (such as the value of textarea elements), or
+            in elements in an editing host (e.g., using contenteditable
+            attribute).
+          </td>
+        </tr>
+        <tr>
+          <td>ismap</td>
+          <td>< img ></td>
+          <td>Indicates that the image is part of a server-side image map.</td>
+        </tr>
+        <tr>
+          <td>itemprop</td>
+          <td>Global attribute</td>
           <td></td>
         </tr>
         <tr>
+          <td>keytype</td>
+          <td>< keygen ></td>
+          <td>Specifies the type of key generated.</td>
+        </tr>
+        <tr>
+          <td>kind</td>
+          <td>< track ></td>
+          <td>Specifies the kind of text track.</td>
+        </tr>
+        <tr>
+          <td>label</td>
+          <td>< optgroup >, < option >, < track ></td>
+          <td>Specifies a user-readable title of the element.</td>
+        </tr>
+        <tr>
+          <td>lang</td>
+          <td>Global attribute</td>
+          <td>Defines the language used in the element.</td>
+        </tr>
+        <tr>
+          <td>language</td>
+          <td>script</td>
+          <td>Defines the script language used in the element.</td>
+        </tr>
+        <tr>
+          <td>loading</td>
+          <td>< img >, < iframe ></td>
+          <td>
+            Indicates if the element should be loaded lazily (loading="lazy") or
+            loaded immediately (loading="eager").
+          </td>
+        </tr>
+        <tr>
+          <td>list</td>
+          <td>< input ></td>
+          <td>
+            Identifies a list of pre-defined options to suggest to the user.
+          </td>
+        </tr>
+        <tr>
+          <td>loop</td>
+          <td>< audio >, < bgsound >, < marquee >, < video ></td>
+          <td>
+            Indicates whether the media should start playing from the start when
+            it's finished.
+          </td>
+        </tr>
+        <tr>
+          <td>low</td>
+          <td>< meter ></td>
+          <td>Indicates the upper bound of the lower range.</td>
+        </tr>
+        <tr>
+          <td>manifest</td>
+          <td>html</td>
+          <td>Specifies the URL of the document's cache manifest.</td>
+        </tr>
+        <tr>
+          <td>max</td>
+          <td>< input >, < meter >, < progress ></td>
+          <td>Indicates the maximum value allowed.</td>
+        </tr>
+        <tr>
+          <td>maxlength</td>
+          <td>< input >, < textarea ></td>
+          <td>
+            Defines the maximum number of characters allowed in the element.
+          </td>
+        </tr>
+        <tr>
+          <td>minlength</td>
+          <td>< input >, < textarea ></td>
+          <td>
+            Defines the minimum number of characters allowed in the element.
+          </td>
+        </tr>
+        <tr>
+          <td>media</td>
+          <td>< a >, < area >, < link >, < source >, style</td>
+          <td>
+            Specifies a hint of the media for which the linked resource was
+            designed.
+          </td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td>< form ></td>
+          <td>
+            Defines which HTTP method to use when submitting the form. Can be
+            GET (default) or POST.
+          </td>
+        </tr>
+
+        <tr>
+          <td>min</td>
+          <td>< input >, < meter ></td>
+          <td>Indicates the minimum value allowed.</td>
+        </tr>
+        <tr>
+          <td>multiple</td>
+          <td>< input >, < select ></td>
+          <td>
+            Indicates whether multiple values can be entered in an input of the
+            type email or file.
+          </td>
+        </tr>
+        <tr>
+          <td>muted</td>
+          <td>< audio >, < video ></td>
+          <td>
+            Indicates whether the audio will be initially silenced on page load.
+          </td>
+        </tr>
+        <tr>
+          <td>name</td>
+          <td>
+            < button >, < form >, < fieldset >, < iframe >, < input >, < keygen
+            >, < object >, < output >, < select >, < textarea >, < map >, < meta
+            >, < param >
+          </td>
+          <td>
+            Name of the element. For example used by the server to identify the
+            fields in form submits.
+          </td>
+        </tr>
+        <tr>
+          <td>novalidate</td>
+          <td>< form ></td>
+          <td>
+            This attribute indicates that the form shouldn't be validated when
+            submitted.
+          </td>
+        </tr>
+        <tr>
+          <td>open</td>
+          <td>< details ></td>
+          <td>Indicates whether the details will be shown on page load.</td>
+        </tr>
+        <tr>
+          <td>optimum</td>
+          <td>< meter ></td>
+          <td>Indicates the optimal numeric value.</td>
+        </tr>
+        <tr>
+          <td>pattern</td>
+          <td>< input ></td>
+          <td>
+            Defines a regular expression which the element's value will be
+            validated against.
+          </td>
+        </tr>
+        <tr>
+          <td>ping</td>
+          <td>< a >, < area ></td>
+          <td>
+            The ping attribute specifies a space-separated list of URLs to be
+            notified if a user follows the hyperlink.
+          </td>
+        </tr>
+        <tr>
+          <td>placeholder</td>
+          <td>< input >, < textarea ></td>
+          <td>
+            Provides a hint to the user of what can be entered in the field.
+          </td>
+        </tr>
+        <tr>
+          <td>poster</td>
+          <td>< video ></td>
+          <td>
+            A URL indicating a poster frame to show until the user plays or
+            seeks.
+          </td>
+        </tr>
+        <tr>
+          <td>preload</td>
+          <td>< audio >, < video ></td>
+          <td>
+            Indicates whether the whole resource, parts of it or nothing should
+            be preloaded.
+          </td>
+        </tr>
+        <tr>
+          <td>radiogroup</td>
+          <td>< command ></td>
           <td></td>
+        </tr>
+        <tr>
+          <td>readonly</td>
+          <td>< input >, < textarea ></td>
+          <td>Indicates whether the element can be edited.</td>
+        </tr>
+        <tr>
+          <td>referrerpolicy</td>
+          <td>< a >, < area >, < iframe >, < img >, < link >, script</td>
+          <td>Specifies which referrer is sent when fetching the resource.</td>
+        </tr>
+        <tr>
+          <td>rel</td>
+          <td>< a >, < area >, < link ></td>
+          <td>
+            Specifies the relationship of the target object to the link object.
+          </td>
+        </tr>
+        <tr>
+          <td>required</td>
+          <td>< input >, < select >, < textarea ></td>
+          <td>
+            Indicates whether this element is required to fill out or not.
+          </td>
+        </tr>
+        <tr>
+          <td>reversed</td>
+          <td>< ol ></td>
+          <td>
+            Indicates whether the list should be displayed in a descending order
+            instead of a ascending.
+          </td>
+        </tr>
+        <tr>
+          <td>rows</td>
+          <td>< textarea ></td>
+          <td>Defines the number of rows in a text area.</td>
+        </tr>
+        <tr>
+          <td>rowspan</td>
+          <td>< td >, < th ></td>
+          <td>Defines the number of rows a table cell should span over.</td>
+        </tr>
+        <tr>
+          <td>sandbox</td>
+          <td>< iframe ></td>
+          <td>
+            Stops a document loaded in an iframe from using certain features
+            (such as submitting forms or opening new windows).
+          </td>
+        </tr>
+        <tr>
+          <td>scope</td>
+          <td>< th ></td>
+          <td>
+            Defines the cells that the header test (defined in the th element)
+            relates to.
+          </td>
+        </tr>
+        <tr>
+          <td>selected</td>
+          <td>< option ></td>
+          <td>Defines a value which will be selected on page load.</td>
+        </tr>
+
+        <tr>
+          <td>shape</td>
+          <td>< a >, < area ></td>
           <td></td>
+        </tr>
+        <tr>
+          <td>size</td>
+          <td>< input >, < select ></td>
+          <td>
+            Defines the width of the element (in pixels). If the element's type
+            attribute is text or password then it's the number of characters.
+          </td>
+        </tr>
+        <tr>
+          <td>sizes</td>
+          <td>< link >, < img >, < source ></td>
           <td></td>
+        </tr>
+        <tr>
+          <td>slot</td>
+          <td>Global attribute</td>
+          <td>Assigns a slot in a shadow DOM shadow tree to an element.</td>
+        </tr>
+        <tr>
+          <td>span</td>
+          <td>< col >, < colgroup ></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>spellcheck</td>
+          <td>Global attribute</td>
+          <td>Indicates whether spell checking is allowed for the element.</td>
+        </tr>
+        <tr style="color: red;">
+          <td>src</td>
+          <td>
+            < audio >, < embed >, < iframe >, < img >, < input >, script, <
+            source >, < track >, < video >
+          </td>
+          <td>The URL of the embeddable content.</td>
+        </tr>
+        <tr>
+          <td>srcdoc</td>
+          <td>< iframe ></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>srclang</td>
+          <td>< track ></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>srcset</td>
+          <td>< img >, < source ></td>
+          <td>One or more responsive image candidates.</td>
+        </tr>
+        <tr>
+          <td>start</td>
+          <td>< ol ></td>
+          <td>Defines the first number if other than 1.</td>
+        </tr>
+
+        <tr>
+          <td>step</td>
+          <td>< input ></td>
+          <td></td>
+        </tr>
+        <tr style="color: red;">
+          <td>style</td>
+          <td>Global attribute</td>
+          <td>Defines CSS styles which will override styles previously set.</td>
+        </tr>
+
+        <tr>
+          <td>tabindex</td>
+          <td>Global attribute</td>
+          <td>
+            Overrides the browser's default tab order and follows the one
+            specified instead.
+          </td>
+        </tr>
+        <tr>
+          <td>target</td>
+          <td>< a >, < area >, < base >, < form ></td>
+          <td>
+            Specifies where to open the linked document (in the case of an < a >
+            element) or where to display the response received (in the case of a
+            < form > element)
+          </td>
+        </tr>
+        <tr>
+          <td>title</td>
+          <td>Global attribute</td>
+          <td>
+            Text to be displayed in a tooltip when hovering over the element.
+          </td>
+        </tr>
+        <tr>
+          <td>translate</td>
+          <td>Global attribute</td>
+          <td>
+            Specify whether an element’s attribute values and the values of its
+            Text node children are to be translated when the page is localized,
+            or whether to leave them unchanged.
+          </td>
+        </tr>
+        <tr style="color: red;">
+          <td>type</td>
+          <td>
+            < button >, < input >, < command >, < embed >, < object >, script, <
+            source >, style, < menu >
+          </td>
+          <td>Defines the type of the element.</td>
+        </tr>
+        <tr>
+          <td>usemap</td>
+          <td>< img >, < input >, < object ></td>
+          <td></td>
+        </tr>
+        <tr style="color: red;">
+          <td>value</td>
+          <td>
+            < button >, < data >, < input >, < li >, < meter >, < option >, <
+            progress >, < param >
+          </td>
+          <td>
+            Defines a default value which will be displayed in the element on
+            page load.
+          </td>
+        </tr>
+        <tr>
+          <td>width</td>
+          <td>
+            < canvas >, < embed >, < iframe >, < img >, < input >, < object >, <
+            video >
+          </td>
+          <td>
+            For the elements listed here, this establishes the element's width.
+          </td>
+        </tr>
+        <tr>
+          <td>wrap</td>
+          <td>< textarea ></td>
+          <td>Indicates whether the text should be wrapped.</td>
         </tr>
       </tbody>
     </table>
