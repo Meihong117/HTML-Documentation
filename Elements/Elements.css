@@ -12,7 +12,7 @@
 }
 .tab {
   float: left;
-  border: 1px solid rgb(248, 236, 236);
+  border: 1px solid gray;
   background-color: #f1e3e3;
   width: 300px;
   height: 600px;
@@ -24,7 +24,7 @@
   color: black;
   padding: 22px 16px;
   width: 100%;
-  border: none;
+  border: 0.3px solid gray;
   outline: none;
   text-align: left;
   cursor: pointer;
@@ -35,15 +35,15 @@
   background-color: rgb(245, 212, 212);
 }
 .tab button.active {
-  background-color: rgb(245, 224, 224);
+  background-color: rgb(235, 133, 133);
 }
 .tabcontent {
   float: left;
-  padding: 0px 12px;
-  border: 1px solid rgb(248, 237, 237);
+  padding: 50px;
+  border: 1px solid gray;
   width: 700px;
-  border-left: none;
   height: 600px;
+  border-left: none;
 }
 /*-----------------------------------------tab end */
 

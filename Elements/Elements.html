@@ -14,16 +14,20 @@
     </div>
     <div class="container">
       <!------------------------------------------------- button -->
-      <div class="tab">
+      <div class="tab" id="tab">
+        <button>
+        <!------------input search-->
+        <input type="text" id="mySearch" onkeyup="searchFunction()" placeholder="Search.." title="Type in a category" >
+        </button>
         <button
           class="tablinks"
           onclick="elements(event, 'a')"
           id="defaultOpen"
         >
-          a
+        a 
         </button>
         <button class="tablinks" onclick="elements(event, 'abbr')">
-          abbr
+        abbr
         </button>
         <button class="tablinks" onclick="elements(event, 'address')">
           address
@@ -152,9 +156,7 @@
         <button class="tablinks" onclick="elements(event, 'main')">
           main
         </button>
-        <button class="tablinks" onclick="elements(event, 'map')">
-          map
-        </button>
+      
         <button class="tablinks" onclick="elements(event, 'mark')">
           mark
         </button>
@@ -281,31 +283,20 @@
           wbr
         </button>
       </div>
+      
       <!------------------------------------------------- show -->
       <div class="show">
         <!-- a -->
         <div id="a" class="tabcontent">
           <h3>a</h3>
-          <div></div>
+          <div><a href="#">link here</a></div>
         </div>
         <!-- abbr -->
         <div id="abbr" class="tabcontent">
           <h3>abbr</h3>
           <div>
-            <p>
-              <dfn id="html"
-                ><abbr title="HyperText Markup Language">HTML</abbr>
-              </dfn>
-              is a markup language used to create the semantics and structure of
-              a web page.
-            </p>
-
-            <p>
-              A <dfn id="spec">Specification</dfn> (<abbr title="Specification"
-                >spec</abbr
-              >) is a document that outlines in detail how a technology or API
-              is intended to function and how it is accessed.
-            </p>
+            <abbr title="HyperText Markup Language">abbr</abbr> <br>
+            <abbr title="Specification">abbr</abbr>
           </div>
         </div>
         <!-- address -->
@@ -424,12 +415,9 @@
           <h3>b</h3>
           <div>
             <p>
-              This article describes several
-              <b class="keywords">text-level</b> elements. It explains their
-              usage in an <b class="keywords">HTML</b> document.
+              This is 
+              <b class="keywords">b</b>. 
             </p>
-            Keywords are displayed with the default style of the
-            <b>element, likely in bold.</b>
           </div>
         </div>
         <!-- base -->
@@ -721,6 +709,23 @@
           <div></div>
         </div>
 
+        <!-- head -->
+        <div id="head" class="tabcontent">
+          <h3>head</h3>
+          <div></div>
+        </div>
+
+        <!-- header -->
+        <div id="header" class="tabcontent">
+          <h3>header</h3>
+          <div></div>
+        </div>
+
+        <!-- html -->
+        <div id="html" class="tabcontent">
+          <h3>html</h3>
+          <div></div>
+        </div>
         <!-- hr -->
         <div id="hr" class="tabcontent">
           <h3>hr</h3>
@@ -792,6 +797,16 @@
             </p>
           </div>
         </div>
+        <!-- li -->
+        <div id="li" class="tabcontent">
+          <h3>li</h3>
+          <div></div>
+        </div>
+         <!-- link -->
+         <div id="link" class="tabcontent">
+          <h3>link</h3>
+          <div></div>
+        </div>
         <!-- main -->
         <div id="main" class="tabcontent">
           <h3>main</h3>
@@ -810,6 +825,7 @@
           </div>
         </div>
 
+        
         <!-- mark -->
         <div id="mark" class="tabcontent">
           <h3>mark</h3>
@@ -1281,22 +1297,37 @@
       </div>
     </div>
     <!--------------------------------------------------- script -->
+    <!-- search -->
     <script>
-      function elements(evt, cityName) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
+      function searchFunction() {
+       let input = document.getElementById("mySearch");
+       let filter = input.value.toUpperCase();
+       let tab = document.getElementById("tab");
+       let button = tab.getElementsByTagName("button");
+     
+        for (let i = 0; i < button.length; i++) {
+          if (button[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+            button[i].style.display = "";
+          } else {
+            button[i].style.display = "none";
+          }
+        }
+      }
+      </script>
+    <!-- tab -->
+    <script>
+      function elements(evt, name) {
+      let tabcontent = document.getElementsByClassName("tabcontent");
+        for (let i = 0; i < tabcontent.length; i++) {
           tabcontent[i].style.display = "none";
         }
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
+      let tablinks = document.getElementsByClassName("tablinks");
+        for (let i = 0; i < tablinks.length; i++) {
           tablinks[i].className = tablinks[i].className.replace(" active", "");
         }
-        document.getElementById(cityName).style.display = "block";
+        document.getElementById(name).style.display = "block";
         evt.currentTarget.className += " active";
       }
-
-      // Get the element with id="defaultOpen" and click on it
       document.getElementById("defaultOpen").click();
     </script>
     <!-- canvas -->
