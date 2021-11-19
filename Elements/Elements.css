@@ -5,6 +5,9 @@
   text-decoration: none;
   color: black;
 }
+span {
+  color: red;
+}
 /*-----------------------------------------tab  */
 .container {
   display: flex;
@@ -15,7 +18,7 @@
   border: 1px solid gray;
   background-color: #f1e3e3;
   width: 300px;
-  height: 600px;
+  height: 700px;
   overflow: scroll;
 }
 .tab button {

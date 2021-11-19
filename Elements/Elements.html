@@ -24,70 +24,70 @@
           onclick="elements(event, 'a')"
           id="defaultOpen"
         >
-          <a href="#">a</a>
+          <a href="#"> < a >(link) / < base ></a>
         </button>
         <button class="tablinks" onclick="elements(event, 'abbr')">
-          <abbr title="HyperText Markup Language">abbr</abbr>
+          <abbr title="HyperText Markup Language">< abbr >(abbreviation/acronym)</abbr>
         </button>
         <button class="tablinks" onclick="elements(event, 'address')">
-          address
+          < address >
         </button>
         <button class="tablinks" onclick="elements(event, 'area')">
-          area / map
+          < area >/< map >(click the picture position)
         </button>
         <button class="tablinks" onclick="elements(event, 'article')">
-          article
+         < article >
         </button>
         <button class="tablinks" onclick="elements(event, 'aside')">
-          aside
+         < aside >(side text)
         </button>
         <button class="tablinks" onclick="elements(event, 'audio')">
-          audio
+         < audio >
         </button>
         <button class="tablinks" onclick="elements(event, 'b')">
-          <b>b</b>
-        </button>
-        <button class="tablinks" onclick="elements(event, 'base')">
-          base
+          <b> < b ></b>
         </button>
         <button class="tablinks" onclick="elements(event, 'bdi')">
-          bdi
+         < bdi >
         </button>
         <button class="tablinks" onclick="elements(event, 'bdo')">
-          bdo
+         < bdo >(change the text direction)
         </button>
         <button class="tablinks" onclick="elements(event, 'blockquote')">
-          blockquote / cite
+         < blockquote >/< cite >
         </button>
         <button class="tablinks" onclick="elements(event, 'body')">
-          body
+         < body >
         </button>
         <button class="tablinks" onclick="elements(event, 'br')">
-          br
+         < br > (change the line)
         </button>
         <button class="tablinks" onclick="elements(event, 'button')">
-          button
+         < button >
         </button>
         <button class="tablinks" onclick="elements(event, 'canvas')">
-          canvas
+         < canvas >
         </button>
         <button class="tablinks" onclick="elements(event, 'code')">
           <code>code</code>  
         </button>
         <button class="tablinks" onclick="elements(event, 'data')">
-          data
+         < data >
         </button>
         <button class="tablinks" onclick="elements(event, 'datalist')">
-          datalist
+         < datalist >(option to select)
         </button>
         <button class="tablinks" onclick="elements(event, 'dd')">
-          dd / dl / dt /
+         < dd >< dl >/< dt >/
         </button>
         <button class="tablinks" onclick="elements(event, 'del')">
-          del / ins
+         <del>del</del> / <ins>ins</ins> / <ins style="text-decoration: none; background-color: #d4fcbc;">ins</ins>
         </button>
         <button class="tablinks" onclick="elements(event, 'details')">
-          details / summary
+          <details>
+            <summary>< summary ></summary>
+           < details >
+         </details>
         </button>
         <button class="tablinks" onclick="elements(event, 'dfn')">
           dfn
@@ -283,19 +283,33 @@
         <!-- a -->
         <div id="a" class="tabcontent">
           <h3>a</h3>
-          <div><a href="#">link here</a></div>
+          <div>< a href="https://example.com" >link here< /a ></div>
+          <h3>base:</h3>
+          <p>
+            A document's used base URL can be accessed by scripts with
+            Node/baseURI. If the document has no <base /> elements, then baseURI
+            defaults to location.href.
+          </p>
+          <div>
+            Example: <br>
+            Given < base href="https://example.com"> <br>
+            and this link: < a href="#anchor">Anker< /a > <br>
+            the link points to https://example.com/#anchor
+          </div>
         </div>
         <!-- abbr -->
         <div id="abbr" class="tabcontent">
           <h3>abbr</h3>
+          <p>The < abbr > HTML element  represents an <span>abbreviation or acronym</span>; the optional title attribute can provide an expansion or description for the abbreviation. If present, title must contain this full description and nothing else.</p>
           <div>
-            <abbr title="HyperText Markup Language">abbr</abbr> <br>
-            <abbr title="Specification">abbr</abbr>
+            <abbr title="HyperText Markup Language">HYML</abbr> <br>
+            <abbr title="Cascading Style Sheets">CSS</abbr>
           </div>
         </div>
         <!-- address -->
         <div id="address" class="tabcontent">
           <h3>address</h3>
+          <p>The < address > HTML element indicates that the enclosed HTML <span>provides contact information for a person or people, or for an organization.</span> </p>
           <div>
             <address>
               <a href="mailto:jim@rock.com">jim@rock.com</a><br />
@@ -306,7 +320,8 @@
         <!--  -->
         <div id="area" class="tabcontent">
           <h3>area / map</h3>
-          <p>Click the picture left or right, got to the other website.</p>
+          <p>Click the picture left or right, got to the other website. </p>
+          <p>This element is used only within a < map > element.</p>
           <div>
             <map name="primary">
               <area
@@ -322,12 +337,13 @@
                 alt="Click to go Right"
               />
             </map>
-            <img usemap="#primary" src="img/ballon.jpg" alt="350 x 150 pic" />
+            <img usemap="#primary" src="ballon.jpg" alt="350 x 150 pic" />
           </div>
         </div>
         <!-- article -->
         <div id="article" class="tabcontent">
           <h3>article / section</h3>
+          <p>The < article > HTML element represents <span>a self-contained composition</span>  in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication). Examples include: a forum post, a magazine or newspaper article, or a blog entry, a product card, a user-submitted comment, an interactive widget or gadget, or any other independent item of content.</p>
           <div>
             <article class="film_review">
               <h2>Jurassic Park</h2>
@@ -373,6 +389,7 @@
         <!-- aside -->
         <div id="aside" class="tabcontent">
           <h3>aside</h3>
+          <p>The < aside > HTML element <span>represents a portion of a document</span>  whose content is only indirectly related to the document's main content. Asides are frequently presented as sidebars or call-out boxes.</p>
           <div>
             <p>
               Salamanders are a group of amphibians with a lizard-like
@@ -407,30 +424,13 @@
         <!-- b -->
         <div id="b" class="tabcontent">
           <h3>b</h3>
-          <div>
-            <p>
-              This is 
-              <b class="keywords">b</b>. 
-            </p>
-          </div>
+          <p>This was formerly known as the Boldface element, and most browsers still draw the text in boldface. However, you should not use <b> for styling text </b>; instead, you should use the CSS font-weight property to create boldface text, or the < strong > element to indicate that text is of special importance.</p>
+          
         </div>
-        <!-- base -->
-        <div id="base" class="tabcontent">
-          <h3>base:</h3>
-          <p>
-            A document's used base URL can be accessed by scripts with
-            Node/baseURI. If the document has no <base /> elements, then baseURI
-            defaults to location.href.
-          </p>
-          <div>
-            <base href="https://www.example.com/" />
-            <base target="_blank" />
-            <base target="_top" href="https://example.com/" />
-          </div>
-        </div>
-        <!-- bdi -->
+        
         <div id="bdi" class="tabcontent">
           <h3>bdi</h3>
+          <p>The < bdi > HTML element tells the browser's bidirectional algorithm to treat the text it contains in isolation from its surrounding text. It's particularly useful when a website dynamically inserts some text and doesn't know the directionality of the text being inserted.</p>
           <div>
             <h4>No < bdi > with only LTR</h4>
             <ul>
@@ -452,16 +452,21 @@
         <!-- bdo -->
         <div id="bdo" class="tabcontent">
           <h3>bdo</h3>
+          <p>The < bdo > HTML element overrides the current directionality of text, so that the text within is rendered in a different direction.</p>
           <p><code>< bdo dir: ltr | rtl >......< /bdo ></code></p>
           <div>
             <!-- Switch text direction -->
-            <p>This text will go left to right.</p>
-            <p><bdo dir="rtl">This text will go right to left.</bdo></p>
+            <p>Input: This text will go left to right.</p> 
+            <p>< bdo dir="rtl" ></p> 
+            <p>Output: <bdo dir="rtl" style="color: blue;">This text will go right to left.</bdo></p>
           </div>
         </div>
         <!-- blockquote -->
         <div id="blockquote" class="tabcontent">
           <h3>blockquote</h3>
+          <p>The < blockquote > HTML element indicates that the enclosed text is an extended quotation. Usually, this is rendered visually by indentation (see Notes for how to change it). </p>
+          <h3>cite</h3>
+          <p>A URL for the source of the quotation may be given using the cite attribute, while a text representation of the source can be given using the < cite > element.</p>
           <div>
             <blockquote cite="https://datatracker.ietf.org/doc/html/rfc1149">
               <p>
@@ -476,6 +481,7 @@
                 availability.
               </p>
             </blockquote>
+            <figcaption>—Aldous Huxley, <cite>Brave New World</cite></figcaption>
           </div>
         </div>
         <!-- body -->
@@ -486,12 +492,24 @@
         <!-- br -->
         <div id="br" class="tabcontent">
           <h3>br</h3>
-          <div></div>
+          <div>
+            <p> O’er all the hilltops<br>
+              Is quiet now,<br>
+              In all the treetops<br>
+              Hearest thou<br>
+              Hardly a breath;<br>
+              The birds are asleep in the trees:<br>
+              Wait, soon like these<br>
+              Thou too shalt rest.
+          </p>
+          </div>
         </div>
         <!-- button -->
         <div id="button" class="tabcontent">
           <h3>button</h3>
-          <div></div>
+          <div>
+            < button <br> class="favorite styled"<br> type="button" <br>name="" <br>value=""<br> formtarget="" <br>formnovalidate="" <br>formmethod="" <br>formenctype="" <br>formaction="" <br>form="" <br>disabled="" <br>autocomplete="" <br>autofocus=""<br>> < /button >
+          </div>
         </div>
         <!-- canvas -->
         <div id="canvas" class="tabcontent">
@@ -515,9 +533,7 @@
         <div id="data" class="tabcontent">
           <h3>data</h3>
           <p>
-            The < data > links a given piece of content with a machine-readable
-            translation. If the content is time- or date-related, the < time >
-            element must be used.
+            The < data > HTML element links a given piece of content with a <span>machine-readable translation</span> . If the content is time- or date-related, the < time > element must be used.
           </p>
           <div>
             <p>Hover text below:</p>
@@ -531,6 +547,7 @@
         <!-- datalist -->
         <div id="datalist" class="tabcontent">
           <h3>datalist</h3>
+          <p>The < datalist > HTML element contains a set of < option > elements that represent the permissible or recommended options available to choose from within other controls.</p>
           <div>
             <label for="ice-cream-choice">Choose a flavor:</label>
             <input
@@ -551,15 +568,16 @@
         <!-- dd -->
         <div id="dd" class="tabcontent">
           <h3>dd</h3>
+          <p>The < dd > HTML element provides the description, definition, or value for the preceding term (< dt >) in a description list (< dl >).</p>
           <div>
             <p>Cryptids of Cornwall:</p>
 
-            <dl>
-              <dt>Beast of Bodmin</dt>
-              <dd>A large feline inhabiting Bodmin Moor.</dd>
+            <dl>dl
+              <dt>(dt)Beast of Bodmin </dt>
+              <dd>(dd)A large feline inhabiting Bodmin Moor. </dd>
 
-              <dt>Morgawr</dt>
-              <dd>A sea serpent.</dd>
+              <dt>(dt)Morgawr </dt>
+              <dd>(dd)A sea serpent. </dd>
 
               <dt>Owlman</dt>
               <dd>A giant owl-like creature.</dd>
@@ -569,13 +587,17 @@
         <!-- del -->
         <div id="del" class="tabcontent">
           <h3>del</h3>
+          <p>The < del > HTML element represents a range of text that has been deleted from a document. This can be used when rendering "track changes" or source code diff information, for example. The < ins > element can be used for the opposite purpose: to indicate text that has been added to the document.</p>
           <div>
-            <p>There is <del>del</del> and there is <ins>ins</ins></p>
+            <p>There is <del>del</del> and there is <ins style="text-decoration: none; background-color: #d4fcbc;">ins</ins></p>
           </div>
         </div>
         <!-- details -->
         <div id="details" class="tabcontent">
           <h3>details</h3>
+          <p>The < details > HTML element creates a disclosure widget in which information is visible only when the widget is toggled into an "open" state. A summary or label must be provided using the < summary > element.
+          <br>
+            A disclosure widget is typically presented onscreen using a small triangle which rotates (or twists) to indicate open/closed status, with a label next to the triangle. The contents of the < summary > element are used as the label for the disclosure widget.</p>
           <div>
             <details>
               <summary>Details</summary>
