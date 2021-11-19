@@ -8,6 +8,16 @@
 span {
   color: red;
 }
+/* search bar*/
+.search_bar {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.search_bar input {
+  padding: 10px 0;
+  height: 20px;
+}
 /*-----------------------------------------tab  */
 .container {
   display: flex;

@@ -16,237 +16,240 @@
       <!------------------------------------------------- button -->
       <div class="tab" id="tab">
         <!------------input search-->
-        <button>
-        <input type="text" id="mySearch" onkeyup="searchFunction()" placeholder="Search.." title="Type in a category" >
-        </button>
+        <div class="search_bar">
+          <input type="text" id="mySearch" onkeyup="searchFunction()" placeholder="Search..." title="Type in a category" />
+        </div>
+        <!------------ buttons -->
         <button
           class="tablinks"
           onclick="elements(event, 'a')"
           id="defaultOpen"
         >
-          <a href="#"> < a >(link) / < base ></a>
+          <a href="#"> &lt;a&gt;(link) / &lt;base&gt;</a>
         </button>
         <button class="tablinks" onclick="elements(event, 'abbr')">
-          <abbr title="HyperText Markup Language">< abbr >(abbreviation/acronym)</abbr>
+          <abbr title="HyperText Markup Language">&lt;abbr&gt;(abbreviation/acronym)</abbr>
         </button>
         <button class="tablinks" onclick="elements(event, 'address')">
-          < address >
+          &lt;address&gt;
         </button>
         <button class="tablinks" onclick="elements(event, 'area')">
-          < area >/< map >(click the picture position)
+          &lt;area&gt; / &lt;map&gt;(click the picture position)
         </button>
         <button class="tablinks" onclick="elements(event, 'article')">
-         < article >
+          &lt;article&gt;
         </button>
         <button class="tablinks" onclick="elements(event, 'aside')">
-         < aside >(side text)
+          &lt;aside&gt;(side text)
         </button>
         <button class="tablinks" onclick="elements(event, 'audio')">
-         < audio >
+          &lt;audio&gt;
         </button>
         <button class="tablinks" onclick="elements(event, 'b')">
-          <b> < b ></b>
+          <b> &lt;b&gt;</b>
         </button>
         <button class="tablinks" onclick="elements(event, 'bdi')">
-         < bdi >
+          &lt;bdi&gt;
         </button>
         <button class="tablinks" onclick="elements(event, 'bdo')">
-         < bdo >(change the text direction)
+          &lt;bdo&gt;(change the text direction)
         </button>
         <button class="tablinks" onclick="elements(event, 'blockquote')">
-         < blockquote >/< cite >
+          &lt;blockquote&gt; / &lt;cite&gt;
         </button>
         <button class="tablinks" onclick="elements(event, 'body')">
-         < body >
+          &lt;body&gt;
         </button>
         <button class="tablinks" onclick="elements(event, 'br')">
-         < br > (change the line)
+          &lt;br&gt; (change the line)
         </button>
         <button class="tablinks" onclick="elements(event, 'button')">
-         < button >
+          &lt;button&gt;
         </button>
         <button class="tablinks" onclick="elements(event, 'canvas')">
-         < canvas >
+          &lt;canvas&gt;
         </button>
         <button class="tablinks" onclick="elements(event, 'code')">
-          <code>code</code>  
+          <code>&lt;code&gt;</code>  
         </button>
         <button class="tablinks" onclick="elements(event, 'data')">
-         < data >
+          &lt;data&gt;
         </button>
         <button class="tablinks" onclick="elements(event, 'datalist')">
-         < datalist >(option to select)
+          &lt;datalist&gt;(option to select)
         </button>
         <button class="tablinks" onclick="elements(event, 'dd')">
-         < dd >< dl >/< dt >/
+          &lt;dd&gt; / &lt;dl&gt; / &lt;dt&gt;
         </button>
         <button class="tablinks" onclick="elements(event, 'del')">
-         <del>del</del> / <ins>ins</ins> / <ins style="text-decoration: none; background-color: #d4fcbc;">ins</ins>
+         <del>&lt;del&gt;</del> / <ins>&lt;ins&gt;</ins> / <ins style="text-decoration: none; background-color: #d4fcbc;">&lt;ins&gt;</ins>
         </button>
         <button class="tablinks" onclick="elements(event, 'details')">
           <details>
-            <summary>< summary ></summary>
-           < details >
+            <summary>&lt;summary&gt;</summary>
+            &lt;details&gt;
          </details>
         </button>
         <button class="tablinks" onclick="elements(event, 'dfn')">
-          dfn
+          <dfn>&lt;dfn&gt;</dfn>(define)
         </button>
         <button class="tablinks" onclick="elements(event, 'dialog')">
-          dialog
+          &lt;dialog&gt;
         </button>
         <button class="tablinks" onclick="elements(event, 'div')">
-          div
+          &lt;div&gt;
         </button>
         <button class="tablinks" onclick="elements(event, 'em')">
-         <em>em</em> 
+         <em>&lt;em&gt;</em> 
         </button>
         <button class="tablinks" onclick="elements(event, 'embed')">
-          embed
+          &lt;embed&gt; vs &lt;iframe&gt;(embeds external content) vs &lt;portal&gt;
         </button>
         <button class="tablinks" onclick="elements(event, 'fieldset')">
-          fieldset / form / legend
+          &lt;fieldset&gt; / &lt;form&gt; / &lt;legend&gt; 
         </button>
         <button class="tablinks" onclick="elements(event, 'figcaption')">
-          figcaption / figure
+          &lt;figcaption&gt; / &lt;figure&gt;
         </button>
-
         <button class="tablinks" onclick="elements(event, 'footer')">
-          footer
+          &lt;footer&gt;
         </button>
         <button class="tablinks" onclick="elements(event, 'h1')">
-          h1~h6
+          &lt;h1~h6&gt;
         </button>
         <button class="tablinks" onclick="elements(event, 'head')">
-          head
+          &lt;head&gt;
         </button>
         <button class="tablinks" onclick="elements(event, 'header')">
-          header
+          &lt;header&gt;
         </button>
         <button class="tablinks" onclick="elements(event, 'hr')">
-          hr
+          &lt;hr&gt; (=======)
         </button>
         <button class="tablinks" onclick="elements(event, 'html')">
-          html
+          &lt;html&gt;
         </button>
         <button class="tablinks" onclick="elements(event, 'i')">
-         <i>i</i> 
-        </button>
-        <button class="tablinks" onclick="elements(event, 'iframe')">
-          iframe
+         <i>&lt;i&gt;</i> 
         </button>
         <button class="tablinks" onclick="elements(event, 'img')">
-          img
+          &lt;img&gt;
         </button>
         <button class="tablinks" onclick="elements(event, 'input')">
-          input / label
+          &lt;input&gt; / &lt;label&gt;
         </button>
-
         <button class="tablinks" onclick="elements(event, 'kbd')">
-         <kbd>kbd</kbd> 
+         &lt;kbd&gt; (keyboard font)
         </button>
         <button class="tablinks" onclick="elements(event, 'link')">
-          link
+          &lt;link&gt;
         </button>
         <button class="tablinks" onclick="elements(event, 'main')">
-          main
+          &lt;main&gt;
         </button>
         <button class="tablinks" onclick="elements(event, 'mark')">
-          mark
+           <mark>&lt;mark&gt;</mark>
         </button>
         <button class="tablinks" onclick="elements(event, 'meta')">
-          meta
+          &lt;meta&gt;
         </button>
         <button class="tablinks" onclick="elements(event, 'metaName')">
-          meta.name
+          &lt;mark.name&gt;
         </button>
         <button class="tablinks" onclick="elements(event, 'metaColor')">
-          meta.name.theme-color
+          &lt;meta.name.theme-color&gt;
         </button>
         <button class="tablinks" onclick="elements(event, 'meter')">
-          meter
+          &lt;meter&gt; <meter
+          id="fuel"
+          min="0"
+          max="100"
+          low="33"
+          high="66"
+          optimum="80"
+          value="50"
+        >
+          at 50/100
+        </meter>
         </button>
         <button class="tablinks" onclick="elements(event, 'nav')">
-          nav
+          &lt;nav&gt;
         </button>
         <button class="tablinks" onclick="elements(event, 'noscript')">
-          noscript
+          &lt;noscript&gt; 
         </button>
         <button class="tablinks" onclick="elements(event, 'object')">
-          object
+          &lt;object&gt; (external resource)
         </button>
         <button class="tablinks" onclick="elements(event, 'ol')">
-          ol / ul / li 
+          &lt;ol&gt; / &lt;ul&gt; / &lt;li&gt;
         </button>
         <button class="tablinks" onclick="elements(event, 'optgroup')">
-          optgroup
+          &lt;optgroup&gt; (select option) / &lt;option&gt;
         </button>
-        <button class="tablinks" onclick="elements(event, 'option')">
-          option
-        </button>
+       
         <button class="tablinks" onclick="elements(event, 'output')">
-          output
+          &lt;output&gt; 
         </button>
         <button class="tablinks" onclick="elements(event, 'p')">
-          p
+          &lt;p&gt;
         </button>
         <button class="tablinks" onclick="elements(event, 'param')">
-          param
+          &lt;param&gt;
         </button>
         <button class="tablinks" onclick="elements(event, 'picture')">
-          picture
+          &lt;picture&gt;
         </button>
-        <button class="tablinks" onclick="elements(event, 'portal')">
-          portal
-        </button>
+        
         <button class="tablinks" onclick="elements(event, 'pre')">
-          pre
+          &lt;pre&gt;
         </button>
         <button class="tablinks" onclick="elements(event, 'progress')">
-          progress
+          &lt;progress&gt; (progress bar)
         </button>
         <button class="tablinks" onclick="elements(event, 'q')">
-          <q>q</q>  
+          &lt;q&gt; ("....")
         </button>
 
         <button class="tablinks" onclick="elements(event, 'ruby')">
-          ruby / rp / rt
+          &lt;ruby&gt; / &lt;rp&gt; / &lt;rt&gt;
         </button>
         <button class="tablinks" onclick="elements(event, 's')">
-         <s>s</s> 
+          &lt;s&gt; <s>SOLD OUT</s>
         </button>
         <button class="tablinks" onclick="elements(event, 'samp')">
-          samp
+          &lt;samp&gt; <samp>SOLD OUT</samp>
         </button>
         <button class="tablinks" onclick="elements(event, 'script')">
-          script
+          &lt;script&gt;
         </button>
 
         <button class="tablinks" onclick="elements(event, 'select')">
-          select / option
+          &lt;select&gt; / &lt;option&gt;
         </button>
         <button class="tablinks" onclick="elements(event, 'slot')">
-          slot
+          &lt;slot&gt;
         </button>
         <button class="tablinks" onclick="elements(event, 'small')">
-          small
+          &lt;small&gt; <small>small</small>
         </button>
 
         <button class="tablinks" onclick="elements(event, 'span')">
-          span
+          &lt;span&gt;
         </button>
         <button class="tablinks" onclick="elements(event, 'strong')">
-          strong
+          &lt;strong&gt; <strong>strong</strong>
         </button>
         <button class="tablinks" onclick="elements(event, 'style')">
-          style
+          &lt;style&gt;
         </button>
         <button class="tablinks" onclick="elements(event, 'sub')">
-          sub
+          &lt;sub&gt; (C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>)
         </button>
 
         <button class="tablinks" onclick="elements(event, 'sup')">
-          sup
+          &lt;sup&gt; (<var>a<sup>2</sup></var> + <var>b<sup>2</sup></var> =
+          <var>c<sup>2</sup></var>)
         </button>
         <button class="tablinks" onclick="elements(event, 'table')">
           table / tbody / thead / tfoot / td / th / tr / caption / col /
@@ -254,27 +257,27 @@
         </button>
 
         <button class="tablinks" onclick="elements(event, 'textarea')">
-          textarea
+          &lt;textarea&gt;
         </button>
 
         <button class="tablinks" onclick="elements(event, 'time')">
-          time
+          &lt;time&gt;
         </button>
         <button class="tablinks" onclick="elements(event, 'title')">
-          title
+          &lt;title&gt;
         </button>
 
         <button class="tablinks" onclick="elements(event, 'u')">
-          u
+          &lt;u&gt; (<u style="text-decoration: #f00 wavy underline">speling</u>)
         </button>
         <button class="tablinks" onclick="elements(event, 'var')">
-          var
+          &lt;var&gt; (<var>l</var> × <var>w</var> × <var>h</var>)
         </button>
         <button class="tablinks" onclick="elements(event, 'video')">
           video / source / track
         </button>
         <button class="tablinks" onclick="elements(event, 'wbr')">
-          wbr
+          &lt;wbr&gt;
         </button>
       </div>
       
@@ -283,7 +286,7 @@
         <!-- a -->
         <div id="a" class="tabcontent">
           <h3>a</h3>
-          <div>< a href="https://example.com" >link here< /a ></div>
+          <div>&lt;a href="https://example.com"&gt;link here&lt; /a &gt;</div>
           <h3>base:</h3>
           <p>
             A document's used base URL can be accessed by scripts with
@@ -608,11 +611,17 @@
         <!-- dfn -->
         <div id="dfn" class="tabcontent">
           <h3>dfn</h3>
+          <p>The < dfn > HTML element is used to indicate the term being defined within the context of a definition phrase or sentence. The < p > element, the < dt >/< dd > pairing, or the < section > element which is the nearest ancestor of the < dfn > is considered to be the definition of the term.</p>
           <div>
+            Example:
             <p>
               A <dfn id="def-validator">validator</dfn> is a program that checks
               for syntax errors in code or documents.
             </p>
+            <p>The <strong>HTML Definition element</strong>
+              (<strong><dfn>&lt;dfn&gt;</dfn></strong>) is used to indicate the
+              term being defined within the context of a definition phrase or
+              sentence.</p>
           </div>
         </div>
         <!-- div -->
@@ -623,6 +632,7 @@
         <!-- dialog -->
         <div id="dialog" class="tabcontent">
           <h3>dialog</h3>
+          <p>The &lt;dialog&gt; HTML element represents a dialog box or other interactive component, such as a dismissible alert, inspector, or subwindow.</p>
           <div>
             <!-- Simple pop-up dialog box containing a form -->
             <dialog id="favDialog">
@@ -655,6 +665,7 @@
         <!-- em -->
         <div id="em" class="tabcontent">
           <h3>em</h3>
+          <p>The &lt;em&gt; HTML element marks text that has stress emphasis. The &lt;em&gt; element can be nested, with each level of nesting indicating a greater degree of emphasis.</p>
           <div>
             <p>Get out of bed <em>now</em>!</p>
             <p>We <em>had</em> to do something about it.</p>
@@ -664,39 +675,51 @@
         <!-- embed -->
         <div id="embed" class="tabcontent">
           <h3>embed</h3>
-          <p>embeds external content at the specified point in the document.</p>
+          <p>The &lt;embed&gt; HTML element embeds external content at the specified point in the document. This content is provided by an external application or other source of interactive content such as a browser plug-in.</p>
           <div>
             <embed
               type="video/quicktime"
-              src=""
+              src="ballon.jpg"
               width="640"
               height="480"
               title="Title of my video"
+              style="height: 50px; width:50px"
             />
           </div>
+          <h3>portal</h3>
+          <div>
+            <portal
+              id="exampleportal"
+              src="https://devdocs.io/html/element/portal"
+            ></portal>
+          </div>
+          <h5>iframe vs embed</h5>
+          <p>iframe: Primarily used to include resources from other domains or subdomains but can be used to include content from the same domain as well. The < iframe >'s strength is that the embedded code is 'live' and can communicate with the parent document.</p>
+          <p>embed: Used to embed content for browser plugins. Exceptions to this is SVG and HTML that are handled differently according to the standard.</p>
         </div>
         <!-- fieldset -->
         <div id="fieldset" class="tabcontent">
-          <h3>fieldset / form / legend</h3>
-          <p>Form: An HTML  < form > is used to collect user input. The user input is most often sent to a server for processing.</p>
+          <h3>fieldset</h3>
+          <p>The &lt;fieldset&gt; HTML element is used to group several controls as well as labels (&lt;label&gt;) within a web form.</p>
+          <h3>form</h3>
+          <p>Form: An HTML  &lt;form&gt; is used to collect user input. The user input is most often sent to a server for processing.</p>
+          <h3>legend</h3>
           <div>
             <form action="#">
-              <fieldset disabled>
+              <fieldset >
                 <legend>legend</legend>
                 <div>
                   <label for="name">Name: </label>
-                  <input type="text" id="name" value="Chris" />
+                  <input type="text" id="name" value="" />
                 </div>
                 <div>
                   <label for="pwd">Archetype: </label>
-                  <input type="password" id="pwd" value="Wookie" />
+                  <input type="password" id="pwd" value="" />
                 </div>
                 <input type="radio" id="kraken" name="monster" />
                 <label for="kraken">Kraken</label><br />
-
                 <input type="radio" id="sasquatch" name="monster" />
                 <label for="sasquatch">Sasquatch</label><br />
-
                 <input type="radio" id="mothman" name="monster" />
                 <label for="mothman">Mothman</label>
               </fieldset>
@@ -705,10 +728,13 @@
         </div>
         <!-- figcaption -->
         <div id="figcaption" class="tabcontent">
-          <h3>figcaption / figure</h3>
+          <h3>figcaption</h3>
+          <p>The &lt;figcaption&gt; HTML element represents a caption or legend describing the rest of the contents of its parent &lt;figure&gt; element.</p>
+          <h3>figure</h3>
+          <p>The &lt;figure&gt; HTML element represents self-contained content, potentially with an optional caption, which is specified using the &lt;figcaption&gt; element. The figure, its caption, and its contents are referenced as a single unit.</p>
           <div class="figcaption">
             <figure>
-              <img src="img/ballon.jpg" alt="picture of ballon" />
+              <img src="ballon.jpg" alt="picture of ballon" />
               <figcaption>ballon</figcaption>
             </figure>
           </div>
@@ -722,19 +748,21 @@
 
         <!-- h1 -->
         <div id="h1" class="tabcontent">
-          <h3>h1</h3>
+          <h3>h1~h6</h3>
           <div></div>
         </div>
 
         <!-- head -->
         <div id="head" class="tabcontent">
           <h3>head</h3>
+          <p>The &lt;head&gt; HTML element contains <span>machine-readable information</span>   (metadata) about the document, like its title, scripts, and style sheets.</p>
           <div></div>
         </div>
 
         <!-- header -->
         <div id="header" class="tabcontent">
           <h3>header</h3>
+          <p>The &lt;header&gt; HTML element <span>represents introductory</span>  content, typically a group of introductory or navigational aids. It may contain some heading elements but also a logo, a search form, an author name, and other elements.</p>
           <div></div>
         </div>
 
@@ -758,15 +786,14 @@
         <!-- i -->
         <div id="i" class="tabcontent">
           <h3>i</h3>
+          <p>
+            The &lt;i&gt; HTML element represents a range of text that is set off from the normal text for some reason, such as idiomatic text, technical terms, taxonomical designations, among others. Historically, these have been presented using italicized type, which is the original source of the &lt;i&gt; naming of this element.
+          </p>
           <div>
             <p>I looked at it and thought <i>This can't be real!</i></p>
           </div>
         </div>
-        <!-- iframe -->
-        <div id="iframe" class="tabcontent">
-          <h3>iframe</h3>
-          <div></div>
-        </div>
+       
         <!-- img -->
         <div id="img" class="tabcontent">
           <h3>img</h3>
@@ -807,6 +834,9 @@
         <!-- kbd -->
         <div id="kbd" class="tabcontent">
           <h3>kbd</h3>
+          <p>
+            The &lt;kbd&gt; HTML element represents a span of inline text denoting textual user input from a keyboard, voice input, or any other text entry device. By convention, the user agent defaults to rendering the contents of a &lt;kbd&gt; element using its default monospace font, although this is not mandated by the HTML standard.
+          </p>
           <div>
             <p>
               Please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> to
@@ -823,16 +853,17 @@
         <!-- main -->
         <div id="main" class="tabcontent">
           <h3>main</h3>
+          <p>
+            The &lt;main&gt; HTML element represents the dominant content of the &lt;body&gt; of a document. The main content area consists of content that is directly related to or expands upon the central topic of a document, or the central functionality of an application.
+          </p>
           <div>
-            <header>Gecko facts</header>
+            <header>This is header</header>
             <main>
               <p>
-                Geckos are a group of usually small, usually nocturnal lizards.
-                They are found on every continent except Australia.
+                This is first main paragraph
               </p>
               <p>
-                Many species of gecko have adhesive toe pads which enable them
-                to climb walls and even windows.
+                This is second main paragraph1
               </p>
             </main>
           </div>
@@ -842,6 +873,9 @@
         <!-- mark -->
         <div id="mark" class="tabcontent">
           <h3>mark</h3>
+          <p>
+            The &lt;mark&gt; HTML element represents text which is marked or highlighted for reference or notation purposes, due to the marked passage's relevance or importance in the enclosing context.
+          </p>
           <div>
             <p>This is <mark>mark</mark>.</p>
           </div>
@@ -851,11 +885,11 @@
           <h3>meta</h3>
           <div>
             <code
-              >< meta charset="utf-8"> <br />
+              >&lt;meta charset="utf-8"&gt; <br />
               Redirect page after 3 seconds
               <br />
-              < meta http-equiv="refresh"
-              content="3;url=https://www.mozilla.org">
+              &lt;meta http-equiv="refresh"
+            content="3;url=https://www.mozilla.org""&gt;
             </code>
           </div>
         </div>
@@ -863,14 +897,14 @@
         <div id="metaName" class="tabcontent">
           <h3>metaName</h3>
           <div>
-            <code>< meta name="color-scheme" content="dark light" ></code>
+            <code>&lt;meta name="color-scheme" content="dark light" &gt;</code>
           </div>
         </div>
         <!-- metaColor -->
         <div id="metaColor" class="tabcontent">
           <h3>metaColor</h3>
           <div>
-            <p>< meta name="theme-color" content="#4285f4" /></p>
+            <p>&lt;meta name="theme-color" content="#4285f4" /&gt;</p>
             <img
               src="img/theme.png"
               alt=""
@@ -900,11 +934,26 @@
         <!-- nav -->
         <div id="nav" class="tabcontent">
           <h3>nav</h3>
-          <div></div>
+          <div>
+            <nav class="crumbs">
+              <ol>
+                  <li class="crumb"><a href="#">Bikes</a></li>
+                  <li class="crumb"><a href="#">BMX</a></li>
+                  <li class="crumb">Jump Bike 3000</li>
+              </ol>
+          </nav>
+          
+          <h1>Jump Bike 3000</h1>
+          <p>This BMX bike is a solid step into the pro world. It looks as legit as it rides and is built to polish your skills.</p>
+          
+          </div>
         </div>
         <!-- noscript -->
         <div id="noscript" class="tabcontent">
           <h3>noscript</h3>
+          <p>
+            The &lt;noscript&gt; HTML element defines a section of HTML to be inserted if a script type on the page is <span>unsupported</span> or if scripting is currently turned off in the browser.
+          </p>
           <div>
             <noscript>
               <!-- anchor linking to external file -->
@@ -918,7 +967,7 @@
         <div id="object" class="tabcontent">
           <h3>object</h3>
           <p>
-            The < object > represents an external resource, which can be treated
+            The &lt;object&gt; represents an <span>external resource</span> , which can be treated
             as an image, a nested browsing context, or a resource to be handled
             by a plugin.
           </p>
@@ -941,6 +990,9 @@
         <!-- optgroup -->
         <div id="optgroup" class="tabcontent">
           <h3>optgroup</h3>
+          <p>
+            The &lt;optgroup&gt; HTML element creates a grouping of options within a &lt;select&gt; element.
+          </p>
           <div>
             <label for="dino-select">Choose a dinosaur:</label>
             <select id="dino-select">
@@ -957,14 +1009,11 @@
             </select>
           </div>
         </div>
-        <!-- option -->
-        <div id="option" class="tabcontent">
-          <h3>option</h3>
-          <div></div>
-        </div>
+        
         <!-- output -->
         <div id="output" class="tabcontent">
           <h3>output</h3>
+          <p>The &lt;output&gt; HTML element is a container element into which a site or app can inject the results of a calculation or the outcome of a user action.</p>
           <div>
             <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
               <input type="range" id="b" name="b" value="50" /> +
@@ -982,34 +1031,27 @@
         <div id="param" class="tabcontent">
           <h3>param</h3>
           <div>
-            <p>The < param > defines parameters for an < object > element.</p>
+            <p>The &lt;param&gt; defines parameters for an &lt;object&gt; element.</p>
           </div>
         </div>
 
         <!-- picture -->
         <div id="picture" class="tabcontent">
           <h3>picture</h3>
-          <p>Change the browser window width to see the image change.</p>
+          <p>The &lt;picture&gt; HTML element contains zero or more &lt;source&gt; elements and one &lt;img&gt; element to offer alternative versions of an image for different display/device scenarios.
+              <br>
+            The browser will consider each child &lt;source&gt; element and choose the best match among them. If no matches are found—or the browser doesn't support the &lt;picture&gt; element—the URL of the &lt;img&gt; element's src attribute is selected. The selected image is then presented in the space occupied by the &lt;img&gt; element.</p>
           <div>
             <picture>
               <source
                 srcset="/media/cc0-images/surfer-240-200.jpg"
-                media="(min-width: 800px)"
+                media="(min-width: 300px)"
               />
-              <img src="img/ballon.jpg" alt="ballon" />
+              <img src="ballon.jpg" alt="ballon" />
             </picture>
           </div>
         </div>
-        <!-- portal -->
-        <div id="portal" class="tabcontent">
-          <h3>portal</h3>
-          <div>
-            <portal
-              id="exampleportal"
-              src="https://devdocs.io/html/element/portal"
-            ></portal>
-          </div>
-        </div>
+        
         <!-- pre -->
         <div id="pre" class="tabcontent">
           <h3>pre</h3>
@@ -1112,6 +1154,9 @@
         <!-- slot -->
         <div id="slot" class="tabcontent">
           <h3>slot</h3>
+          <p>
+            The &lt;slot&gt; HTML element—part of the Web Components technology suite—is a placeholder inside a web component that you can fill with your own markup, which lets you create separate DOM trees and present them together.
+          </p>
           <div>
             <code class="name"
               >&lt;<slot name="element-name">NEED NAME</slot>&gt;</code
@@ -1140,6 +1185,9 @@
         <!-- span -->
         <div id="span" class="tabcontent">
           <h3>span</h3>
+          <p>
+            The &lt;span&gt; HTML element is a generic inline container for phrasing content, which does not inherently represent anything. It can be used to group elements for styling purposes (using the class or id attributes), or because they share attribute values, such as lang. It should be used only when no other semantic element is appropriate. &lt;span&gt; is very much like a &lt;span&gt; element, but &lt;div&gt; is a block-level element whereas a &lt;span&gt; is an inline element.
+          </p>
           <div></div>
         </div>
         <!-- strong -->
@@ -1234,7 +1282,12 @@
         <!-- textarea -->
         <div id="textarea" class="tabcontent">
           <h3>textarea</h3>
-          <div></div>
+          <div>
+            <textarea id="story" name="story"
+                  rows="5" cols="33">
+It was a dark and stormy night...
+            </textarea>
+          </div>
         </div>
         <!-- time -->
         <div id="time" class="tabcontent">
@@ -1254,7 +1307,12 @@
         <!-- title -->
         <div id="title" class="tabcontent">
           <h3>title</h3>
-          <div><title>Awesome interesting stuff</title></div>
+          <p>
+            The &lt;title&gt; element is always used within a page's &lt;head&gt; block.
+          </p>
+          <div>
+            <title>Awesome interesting stuff</title>
+          </div>
         </div>
         <!-- u -->
         <div id="u" class="tabcontent">
@@ -1297,6 +1355,9 @@
         <!-- wbr -->
         <div id="wbr" class="tabcontent">
           <h3>wbr</h3>
+          <p>
+            The &lt;wbr&gt; HTML element represents a word break opportunity—a position within text where the browser may optionally break a line, though its line-breaking rules would not otherwise create a break at that location.
+          </p>
           <div>
             <div id="example-paragraphs">
               <p>Fernstraßenbauprivatfinanzierungsgesetz</p>
@@ -1310,21 +1371,27 @@
       </div>
     </div>
     <!--------------------------------------------------- script -->
-    <!-- search -->
+    <!-- search bar-->
     <script>
+      window.onload = function() {
+            document.getElementById('mySearch').value = '';
+        }
       function searchFunction() {
        let input = document.getElementById("mySearch");
+
        let filter = input.value.toUpperCase();
        let tab = document.getElementById("tab");
        let button = tab.getElementsByTagName("button");
+       //console.log(button.length)//78
      
         for (let i = 0; i < button.length; i++) {
           if (button[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
-            button[i].style.display = "";
-          } else {
+            button[i].style.display = " ";
+          }else {
             button[i].style.display = "none";
           }
         }
+        
       }
       </script>
     <!-- tab -->
