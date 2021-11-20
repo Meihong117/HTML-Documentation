@@ -16,7 +16,9 @@ span {
 }
 .search_bar input {
   padding: 10px 0;
-  height: 20px;
+  margin: 10px;
+  height: 15px;
+  width: 250px;
 }
 /*-----------------------------------------tab  */
 .container {
@@ -26,14 +28,14 @@ span {
 .tab {
   float: left;
   border: 1px solid gray;
-  background-color: #f1e3e3;
+  background-color: #fdefef;
   width: 300px;
   height: 700px;
   overflow: scroll;
 }
 .tab button {
   display: block;
-  background-color: #f5dfdf;
+  background-color: #fdefef;
   color: black;
   padding: 22px 16px;
   width: 100%;
@@ -46,10 +48,10 @@ span {
 }
 
 .tab button:hover {
-  background-color: rgb(245, 212, 212);
+  background-color: rgb(255, 227, 227);
 }
 .tab button.active {
-  background-color: rgb(235, 133, 133);
+  background-color: rgb(247, 202, 202);
 }
 .tabcontent {
   float: left;

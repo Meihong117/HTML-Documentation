@@ -17,7 +17,7 @@
       <div class="tab" id="tab">
         <!------------input search-->
         <div class="search_bar">
-          <input type="text" id="mySearch" onkeyup="searchFunction()" placeholder="Search..." title="Type in a category" />
+          <input type="text" id="mySearch" onkeyup="searchFunction()" placeholder="Search Tag Name" title="Type in a category" />
         </div>
         <!------------ buttons -->
         <button
@@ -218,7 +218,7 @@
           &lt;s&gt; <s>SOLD OUT</s>
         </button>
         <button class="tablinks" onclick="elements(event, 'samp')">
-          &lt;samp&gt; <samp>SOLD OUT</samp>
+          &lt;samp&gt; <samp>F1</samp>
         </button>
         <button class="tablinks" onclick="elements(event, 'script')">
           &lt;script&gt;
@@ -1378,7 +1378,6 @@ It was a dark and stormy night...
         }
       function searchFunction() {
        let input = document.getElementById("mySearch");
-
        let filter = input.value.toUpperCase();
        let tab = document.getElementById("tab");
        let button = tab.getElementsByTagName("button");
