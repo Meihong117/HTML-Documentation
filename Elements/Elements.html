@@ -252,10 +252,11 @@
           <var>c<sup>2</sup></var>)
         </button>
         <button class="tablinks" onclick="elements(event, 'table')">
-          table / tbody / thead / tfoot / td / th / tr / caption / col /
-          template
+          table / tbody / thead / tfoot / td(table data) / th(table) / tr(table row) / caption / col 
         </button>
-
+        <button class="tablinks" onclick="elements(event, 'template')">
+          &lt;template&gt; (hidden from the user)
+        </button>
         <button class="tablinks" onclick="elements(event, 'textarea')">
           &lt;textarea&gt;
         </button>
@@ -1238,6 +1239,7 @@
           <h3>table</h3>
           <div>
             <table>
+              <p>->tr (table row)</p>
               <colgroup>
                 <col />
                 <col span="2" style="background-color: #d7d9f2;" />
@@ -1248,37 +1250,47 @@
               </caption>
               <thead>
                 <tr>
-                  <td></td>
-                  <th scope="col">head #1</th>
-                  <th scope="col">head #2</th>
-                  <th scope="col">head #3</th>
-                  <th scope="col">head #4</th>
+                  <th>thead</th>
+                  <th scope="col">th #1</th>
+                  <th scope="col">th #2</th>
+                  <th scope="col">th #3</th>
+                  <th scope="col">th #4</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td scope="row">skill</td>
-                  <td>first</td>
-                  <td>second</td>
-                  <td>thrid</td>
-                  <td>fourth</td>
+                  <td scope="row">tbody</td>
+                  <td>td</td>
+                  <td>td</td>
+                  <td>td</td>
+                  <td>td</td>
                 </tr>
               </tbody>
               <tfoot>
                 <tr>
-                  <th scope="row">Totals</th>
-                  <td>21,000</td>
+                  <td scope="row">tfoot</td>
+                  <td>td</td>
                 </tr>
               </tfoot>
-              <template id="productrow">
-                <tr>
-                  <td class="record"></td>
-                  <td></td>
-                </tr>
-              </template>
+              
             </table>
           </div>
         </div>
+
+        <!-- template -->
+        <div id="template" class="tabcontent">
+          <h3>template</h3>
+          <p>You can use the < template > tag if you have some HTML code you want to use over and over again, but not until you ask for it. To do this without the < template > tag, you have to create the HTML code with JavaScript to prevent the browser from rendering the code.</p>
+          <div>
+            <button onclick="showTemplate()">Show hidden content</button>
+          <template id="showTemp">
+            <h2>Show Hidden Template Content</h2>
+          </template>
+          <div id="show_temp"></div>
+          </div>
+        </div>
+
+
         <!-- textarea -->
         <div id="textarea" class="tabcontent">
           <h3>textarea</h3>
@@ -1441,6 +1453,14 @@ It was a dark and stormy night...
         outputBox.value =
           favDialog.returnValue + " button clicked - " + new Date().toString();
       });
+    </script>
+    <!-- How hidden template -->
+    <script>
+      function showTemplate() {
+        let temp = document.getElementsByTagName("template")[0];
+        let clon = temp.content.cloneNode(true);
+   document.getElementById('show_temp').appendChild(clon);
+      }
     </script>
   </body>
 </html>
