@@ -17,7 +17,7 @@ span {
 .search_bar input {
   padding: 10px 0;
   margin: 10px;
-  height: 15px;
+  height: 12px;
   width: 250px;
 }
 /*-----------------------------------------tab  */
@@ -30,7 +30,7 @@ span {
   border: 1px solid gray;
   background-color: #fdefef;
   width: 300px;
-  height: 700px;
+  height: 550px;
   overflow: scroll;
 }
 .tab button {
@@ -58,8 +58,13 @@ span {
   padding: 50px;
   border: 1px solid gray;
   width: 700px;
-  height: 600px;
+  height: 450px;
   border-left: none;
+}
+@media only screen and (max-width: 600px) {
+  /* .container {
+   
+  } */
 }
 /*-----------------------------------------tab end */
 
