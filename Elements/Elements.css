@@ -59,6 +59,7 @@ span {
   border: 1px solid gray;
   width: 700px;
   height: 450px;
+  overflow: scroll;
   border-left: none;
 }
 @media only screen and (max-width: 600px) {
